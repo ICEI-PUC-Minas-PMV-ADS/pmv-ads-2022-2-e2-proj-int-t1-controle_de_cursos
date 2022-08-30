@@ -81,31 +81,41 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 ### Requisitos Funcionais
 
-|ID    | Descrição do Requisito  | Prioridade |
-|------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+A tabela a seguir apresenta os requisitos do projeto, identificando a prioridade em que os mesmos devem ser entregues.
+
+|ID    |Descrição do Requisito| Prioridade |
+|------|----------------------|------------|
+|RF-01|	Deve possuir tela "Home" e fornecer acesso a página de cadastro de servidores efetivos e comissionados (alunos) e também login para alunos já cadastrados;|ALTA|
+|RF-02|	Deve possibilitar o cadastro de alunos  para o acesso a página home logada permitindo a visualização das ofertas de cursos disponíveis;|MÉDIA|
+|RF-03|	 O site deve possuir a grade de programação de  cursos contendo todos as informações específicas de cada curso.|ALTA|
+|RF-04|Deve disponibilizar ao usuário as opções de escolha conforme categoria: cursos internos (parceria com instituições de ensino), cursos externos (contratados via dispensa de licitação), cursos desenvolvidos pelas próprias secretarias/Órgãos/Entidades.|MÉDIA|
+|RF-05|	Deve disponibilizar cadastro específico para o fornecedor de curso externo inserir os dados da empresa e a documentação necessária para o cadastramento das propostas de cursos, arquivos necessários à contratação, verificação documental e validação das informações cadastrais;|ALTA|
+|RF-06| Sistema de marcação, para que o aluno salve como favorita a opção de cursos desejados e sugeridos, para que se possa estimar a demanda latente e a real necessidade na ótica do aluno;|BAIXA|
+|RF-07| O site deve possibilitar o cadastro e registro das informações pertinentes ao processo de licitação/negociação dos cursos;|ALTA|
+|RF-08| Fornecer página com histórico das solicitações ja realizadas pelo aluno, sejam elas em andamento ou encerradas;|MÉDIA|
+
 
 ### Requisitos não Funcionais
 
-|ID     | Descrição do Requisito  |Prioridade |
-|-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | ALTA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
-|RNF-003| O site deve estar disponível 24 horas por dia, todos os dias da semana  | ALTA |  
-|RNF-004| O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge, Safari ou Ópera) | ALTA | 
-|RNF-005| O site deve ter uma linguagem simples e de fácil entendimento | ALTA | 
-|RNF-006| O site deve ter uma boa navegabilidade e usabilidade, facilitando a experiência do usuário | ALTA | 
-|RNF-007| Por se tratar de um site com abrangência nacional o site deve comportar grandes acessos simultâneos | ALTA | 
+A tabela a seguir apresenta os requisitos não funcionais que o projeto deverá atender.
+
+|ID  | Descrição do Requisito  |Prioridade |
+|----|-------------------------|----|
+|RNF-01|	O site deve ser publicado em um ambiente acessível publicamente na Internet (GitHub Pages);|ALTA|
+|RNF-02|	O site deverá ser responsivo permitindo a visualização em um celular de forma adequada;|ALTA|
+|RNF-03|	O site deve ter bom nível de contraste entre os elementos da tela em conformidade;|MÉDIA|
+|RNF-04|	O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge).|ALTA|
+
 
 ## Restrições
 
-O projeto está restrito pelos itens apresentados na tabela a seguir.
+As questões que limitam a execução desse projeto e que se configuram como obrigações claras para o desenvolvimento do projeto em questão são apresentadas na tabela a seguir.
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+|RE-01|	O projeto deverá ser entregue no final do semestre letivo, não podendo extrapolar a data de XX/XX/2022|
+|RE-02|	O aplicativo deve se restringir às tecnologias básicas da Web no back-end|
+|RE-03|	O site não deve permitir a utilização para outros fins além de controle de cursos|
 
 ## Diagrama de Casos de Uso
 
