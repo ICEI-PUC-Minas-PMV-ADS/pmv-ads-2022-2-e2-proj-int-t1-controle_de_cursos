@@ -21,7 +21,7 @@ A fim de facilitar a obtenção e análise dos dados cadastrados propomos a cria
 - Gerar relatórios de volumetria por curso, alunos cadastrados por curso e cursos mais realizados para assim então oferecer uma melhor análise da situação atual dos alunos para a equipe responsável por oferecer novos cursos e avaliar a qualidade dos já ofertados.
 
 ## Justificativa
-  Facilitar a organização dos cursos, impedindo que haja duplicidade dos usuários.  Melhorando a comunicação entre os organizadores e os alunos inscritos. Auxiliando, dessa forma, a comunicação entre todas as partes envolvidas no processo de inscrição e organização da plataforma
+  Facilitar a organização dos cursos, impedindo que haja duplicidade dos usuários.  Melhorando a comunicação entre os organizadores e os alunos inscritos. Auxiliando, dessa forma, a comunicação entre todas as partes envolvidas no processo de inscrição e organização da plataforma.
 
 
 ## Público-Alvo
