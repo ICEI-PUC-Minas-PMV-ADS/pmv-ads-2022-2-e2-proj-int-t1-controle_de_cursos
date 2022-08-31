@@ -105,7 +105,7 @@ A tabela a seguir apresenta os requisitos não funcionais que o projeto deverá 
 |RNF-02|	O site deverá ser responsivo permitindo a visualização em um celular de forma responsiva|ALTA|
 |RNF-03|	O site deve ter bom nível de contraste entre os elementos da tela em conformidade|MÉDIA|
 |RNF-04| O site deve estar disponível 24 horas por dia, todos os dias da semana  | ALTA | 
-|RNF-05| O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge, Safari ou Ópera) | ALTA | 
+|RNF-05| O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge, Safari ou Opera) | ALTA | 
 |RNF-06| O site deve ter uma linguagem simples e de fácil entendimento | ALTA | 
 |RNF-07| O site deve ter uma boa navegabilidade e usabilidade, facilitando a experiência do usuário | ALTA | 
 |RNF-08| Por se tratar de um site com abrangência nacional o site deve comportar grandes acessos simultâneos | ALTA |
