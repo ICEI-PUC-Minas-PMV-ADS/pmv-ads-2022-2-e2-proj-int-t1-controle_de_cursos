@@ -117,7 +117,7 @@ As questões que limitam a execução desse projeto e que se configuram como obr
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|RE-01|	O projeto deverá ser entregue no final do semestre letivo, não podendo extrapolar a data de XX/XX/2022|
+|RE-01|	O projeto deverá ser entregue no final do semestre letivo, não podendo extrapolar a data de 11/12/2022|
 |RE-02|	O aplicativo deve se restringir às tecnologias básicas da Web no back-end|
 |RE-03|	O site não deve permitir a utilização para outros fins além de controle de cursos|
 
