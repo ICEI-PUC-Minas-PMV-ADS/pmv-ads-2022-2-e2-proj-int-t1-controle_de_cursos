@@ -1,10 +1,10 @@
-# Gerenciamento de Cursos
+# Controle de Cursos
 
 `CURSO` Análise e Desenvolvimento de Sistemas
 
 `DISCIPLINA` Projeto: Desenvolvimento de uma Aplicação Interativa
 
-`SEMESTRE` 2º Semestre
+`SEMESTRE` Eixo 2
 
 Criação de uma aplicação ASP CORE .NET MVC com a premissa de gerenciar os cursos e facilitar a comunicação entre aluno e organizador em relação aos cursos ofertados em plataforma externa.
 
