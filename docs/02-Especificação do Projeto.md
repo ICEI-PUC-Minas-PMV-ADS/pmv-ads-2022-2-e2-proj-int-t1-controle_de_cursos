@@ -10,8 +10,8 @@ A fim de definir de maneira minuciosa a especificação do problema e os pontos 
 
 |<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/Projeto-Grupo-6/blob/master/docs/img/users/joao%20gomes.png" width="150" height="100">   | **João Gomes** <br> 41 anos   |
 |:---------------------------------------:|:-------------------------------:|
-|**Ocupação** | Técnico em contabilidade, servidor comissionado do município de Contagem-BH
-|**Motivação** | Investir em aprendizado para conseguir melhores ofertas de trabalho
+|**Ocupação** | Técnico em contabilidade, servidor efetivo do município de Contagem
+|**Motivação** | Conseguir melhorar o desempenho das minhas funções no trabalho.
 |**Frustrações** | Pouco tempo para estudar|
 
 ### <span style="color:Green">**`Rafael Souza`**
@@ -30,7 +30,7 @@ A fim de definir de maneira minuciosa a especificação do problema e os pontos 
 |<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/Projeto-Grupo-6/blob/master/maria.jpg" width="150" height="100">   | **Maria de Assis Pereira** <br> 35 anos   |
 |:---------------------------------------:|:-------------------------------:|
 |**Ocupação** | Administradora do Sistema |
-|**Motivação** |Poder proporcionar condições de desenvolvimento pessoal  e capacitação profissional aos servidores; Poder apresentar ferramentas administrativas capazes de auxiliar o servidor no planejamento e  organização das atividades em seu local de trabalho; Aumentar nível de qualidade das entregas aos cidadãos, através do aumento do número de servidores capacitados e treinados|
+|**Motivação** Prover qualidade e suporte aos processos e pessoas geridos na Escola de Governo
 |**Frustrações** |Não ter um sistema que auxilie na organização das atividades operacionais da Escola de Governo; Falta de padronização das informações no local de trabalho; Dificuldade de obter informações consistentes e atualizadas; Não ter informações disponibilizadas on-line; Ter que trabalhar com planilhas eletrônicas, que necessitam de atualização manual|
 
 ### <span style="color:Green">**`Joaquim Lara`**
@@ -48,8 +48,8 @@ A fim de definir de maneira minuciosa a especificação do problema e os pontos 
 |<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/Projeto-Grupo-6/blob/master/docs/img/users/Rosana.jpg" width="100" height="155">   | **Rosana Avelar** <br> 44 anos   |
 |:---------------------------------------:|:-------------------------------:|
 |**Ocupação** | Gestora da Escola de Governo
-|**Motivação** | Prover qualidade e suporte aos processos e pessoas geridos na Escola de Governo
-|**Frustrações** | Dificuldade de acesso a dados e relatórios de indicadores de desempenho de alunos e cursos realizados, que são vitais para tomada de decisões de negócio|
+|**Motivação** |Poder proporcionar condições de desenvolvimento pessoal  e capacitação profissional aos servidores; Poder apresentar ferramentas administrativas capazes de auxiliar o servidor no planejamento e  organização das atividades em seu local de trabalho; Aumentar nível de qualidade das entregas aos cidadãos, através do aumento do número de servidores capacitados e treinados|
+|**Frustrações** | Dificuldade de acesso a dados e relatórios de indicadores de desempenho de alunos e cursos realizados, que são vitais para tomada de decisões para obtenção de novos cursos.|
 
 
 ## Histórias de Usuários
