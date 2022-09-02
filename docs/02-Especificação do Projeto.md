@@ -16,26 +16,13 @@ A fim de definir de maneira minuciosa a especificação do problema e os pontos 
 
 ### <span style="color:Green">**`Rafael Souza`**
 
-
 |<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/DriveMyCar/blob/master/docs/img/users/Felipe.jpg" width="160" height="100">   | **Rafael Souza** <br> 34 anos   |
 |:---------------------------------------:|:-------------------------------:|
 |**Ocupação** | Fornecedor de cursos
 |**Motivação** | Aumento da qualidade e disponibilidade da educação no Brasil
 |**Frustrações** | Dificuldade em achar plataformas confiáveis para cadastrar os cursos ofertados pela sua empresa, bem como seu portifólio|
 
-
-### <span style="color:Green">**`José Alberto de Souza`**
-
-
-|<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/Projeto-Grupo-6/blob/master/docs/img/users/jose.jpg" width="150" height="100">   | **José Alberto de Souza** <br> 63 anos   |
-|:---------------------------------------:|:-------------------------------:|
-|**Ocupação** | Aposentado
-|**Motivação** |Aprender, com os cursos, assuntos que não tinha tempo enquanto trabalhava
-|**Frustrações** |Dificuldade em utilizar a plataforma dos cursos disponíveis. Não conseguir se comunicar diretamente com os professores|
-
-
-
-  ### <span style="color:Green">**`Maria de Assis Pereira`**
+### <span style="color:Green">**`Maria de Assis Pereira`**
 
 
 |<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/Projeto-Grupo-6/blob/master/maria.jpg" width="150" height="100">   | **Maria de Assis Pereira** <br> 35 anos   |
@@ -69,8 +56,7 @@ Com base na análise das personas foram identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/DESEJO ... `O QUE` |PARA ... `PORQUE`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|José Alberto de Souza (aluno, servidor efetivo)|	Receber informações dos cursos disponíveis, poder expressar opinião e sugestões, ter canal direto ao suporte da Escola de Governo	|Acessar e imprimir as informações resumidas de todos os cursos que realizei, acessar e imprimir todos os meus certificados|
-|João (aluno, servidor comissionado)|	Receber informações dos cursos disponíveis, poder expressar opinião e sugestões, ter canal direto ao suporte da Escola de Governo.|	Acessar e imprimir as informações resumidas de todos os cursos que realizei, acessar e imprimir todos os meus atestados|
+|João Gomes (aluno, servidor comissionado)|	Receber informações dos cursos disponíveis, poder expressar opinião e sugestões, ter canal direto ao suporte da Escola de Governo.|	Acessar e imprimir as informações resumidas de todos os cursos que realizei, acessar e imprimir todos os meus atestados|
 |Rafael Souza (parceiro, servidor de cursos)| Cadastrar os dados da minha empresa, cadastrar o meu portifólio de cursos| Participar dos processos licitatórios e de contratações dos cursos|
 |Maria de Assis Pereira (administradora do sistema)|	Acessar todos os dados dos alunos, acessar todos os dados dos cursos|	Controlar os acessos e permissões dos alunos, montar a grade de programação dos cursos|
 |Joaquim Lara (ponto focal da secretaria/órgão/entidade)| Acessar a grade de programação dos cursos, acessar as informações de todos cursos feitos pelos servidores da minha área de acompanhamento, concentrar os contatos com os servidores em um canal de comunicação específico na plataforma|	Programar a distribuição das vagas aos servidores da minha área de responsabilidade|
@@ -126,4 +112,4 @@ As questões que limitam a execução desse projeto e que se configuram como obr
 
 Dada a elicitação dos requisitos funcionais, utilizamos um modelo gráfico com as descrições sucintas dos casos de uso e dos atores. Ele contempla a fronteira do sistema e o detalhamento dos requisitos funcionais com a indicação dos atores, casos de uso e seus relacionamentos.
 
-![Diagrama de de Casos de Uso](img/DiagramaCasosDeUso4.png)
+![Diagrama de de Casos de Uso](img/DiagramaCasosDeUso5.png)
