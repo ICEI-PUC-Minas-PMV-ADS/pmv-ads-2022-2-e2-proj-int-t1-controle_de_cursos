@@ -10,9 +10,9 @@ A fim de definir de maneira minuciosa a especificação do problema e os pontos 
 
 |<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/Projeto-Grupo-6/blob/master/docs/img/users/joao%20gomes.png" width="150" height="100">   | **João Gomes** <br> 41 anos   |
 |:---------------------------------------:|:-------------------------------:|
-|**Ocupação** | Técnico em contabilidade, servidor efetivo do município de Contagem
+|**Ocupação** | Aluno, servidor municipal efetivo.
 |**Motivação** | Conseguir melhorar o desempenho das minhas funções no trabalho.
-|**Frustrações** | Pouco tempo para estudar|
+|**Frustrações** | Pouco tempo para estudar.|
 
 ### <span style="color:Green">**`Rafael Souza`**
 
@@ -20,8 +20,8 @@ A fim de definir de maneira minuciosa a especificação do problema e os pontos 
 |<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/DriveMyCar/blob/master/docs/img/users/Felipe.jpg" width="160" height="100">   | **Rafael Souza** <br> 34 anos   |
 |:---------------------------------------:|:-------------------------------:|
 |**Ocupação** | Fornecedor de cursos
-|**Motivação** | Aumento da qualidade e disponibilidade da educação no Brasil
-|**Frustrações** | Dificuldade em achar plataformas confiáveis para cadastrar os cursos ofertados pela sua empresa, bem como seu portifólio|
+|**Motivação** | Aumento da qualidade e disponibilidade da educação no Brasil.
+|**Frustrações** | Dificuldade em achar plataformas confiáveis para cadastrar os cursos ofertados pela minha empresa, bem como o portifólio.|
 
 
   ### <span style="color:Green">**`Maria de Assis Pereira`**
@@ -30,17 +30,17 @@ A fim de definir de maneira minuciosa a especificação do problema e os pontos 
 |<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/Projeto-Grupo-6/blob/master/maria.jpg" width="150" height="100">   | **Maria de Assis Pereira** <br> 35 anos   |
 |:---------------------------------------:|:-------------------------------:|
 |**Ocupação** | Administradora do Sistema |
-|**Motivação** Prover qualidade e suporte aos processos e pessoas geridos na Escola de Governo
-|**Frustrações** |Não ter um sistema que auxilie na organização das atividades operacionais da Escola de Governo; Falta de padronização das informações no local de trabalho; Dificuldade de obter informações consistentes e atualizadas; Não ter informações disponibilizadas on-line; Ter que trabalhar com planilhas eletrônicas, que necessitam de atualização manual|
+|**Motivação** Prover qualidade e suporte aos processos e pessoas responsáveis pela gestão e manutenção das atividades operacionais na Escola de Governo.
+|**Frustrações** |Não ter um sistema que auxilie no planejamento e na organização das atividades operacionais da Escola de Governo; Falta de padronização das informações no local de trabalho; Dificuldade de obter informações consistentes e atualizadas; Não ter informações disponibilizadas on-line; Ter que trabalhar com planilhas eletrônicas, que necessitam de atualização manual.|
 
 ### <span style="color:Green">**`Joaquim Lara`**
 
 
 |<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/Projeto-Grupo-6/blob/1081f53ec7b5d6a3cd048129773603861b46c832/Joaquim%20Ribeiro.png" width="100" height="155">   | **Joaquim Lara** <br> 35 anos   |
 |:---------------------------------------:|:-------------------------------:|
-|**Ocupação** | Ponto focal da Secretaria
-|**Motivação** | Administrar de forma eficiente todos os cursos que são de minha responsabilidade
-|**Frustrações** | Dificuldade de acessar as informações especificas dos cursos que administro|
+|**Ocupação** | Ponto focal da Secretaria Municipal de Educação 
+|**Motivação** | Aumentar a eficiência no controle dos servidores que necessitam de capacitação no âmbito de minha responsabilidade.
+|**Frustrações** | Dificuldade de acesso às informações gerais e especificas dos cursos, para poder repassar aos servidores os quais sou responsável por orientar e indicar para as vagas disponíveis de cada curso.|
   
 ### <span style="color:Green">**`Rosana Avelar`**
 
