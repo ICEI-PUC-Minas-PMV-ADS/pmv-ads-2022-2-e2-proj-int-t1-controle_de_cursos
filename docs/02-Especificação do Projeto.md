@@ -30,8 +30,8 @@ A fim de definir de maneira minuciosa a especificação do problema e os pontos 
 |<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/Projeto-Grupo-6/blob/master/docs/img/users/jose.jpg" width="150" height="100">   | **José Alberto de Souza** <br> 63 anos   |
 |:---------------------------------------:|:-------------------------------:|
 |**Ocupação** | Aposentado
-|**Motivação** |Aprender, com os cursos, assuntos que não tinha tempo enquanto trabalhava.
-|**Frustrações** |Dificuldade em utilizar a plataforma dos cursos disponíveis. Não conseguir se comunicar diretamente com os professores.|
+|**Motivação** |Aprender, com os cursos, assuntos que não tinha tempo enquanto trabalhava
+|**Frustrações** |Dificuldade em utilizar a plataforma dos cursos disponíveis. Não conseguir se comunicar diretamente com os professores|
 
 
 
@@ -41,8 +41,8 @@ A fim de definir de maneira minuciosa a especificação do problema e os pontos 
 |<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/Projeto-Grupo-6/blob/master/maria.jpg" width="150" height="100">   | **Maria de Assis Pereira** <br> 35 anos   |
 |:---------------------------------------:|:-------------------------------:|
 |**Ocupação** | Administradora do Sistema |
-|**Motivação** |Poder proporcionar condições de desenvolvimento pessoal  e capacitação profissional aos servidores; Poder apresentar ferramentas administrativas capazes de auxiliar o servidor no planejamento e  organização das atividades em seu local de trabalho; Aumentar nível de qualidade das entregas aos cidadãos, através do aumento do número de servidores capacitados e treinados. |
-|**Frustrações** |Não ter um sistema que auxilie na organização das atividades operacionais da Escola de Governo; Falta de padronização das informações no local de trabalho; Dificuldade de obter informações consistentes e atualizadas; Não ter informações disponibilizadas on-line; Ter que trabalhar com planilhas eletrônicas, que necessitam de atualização manual.|
+|**Motivação** |Poder proporcionar condições de desenvolvimento pessoal  e capacitação profissional aos servidores; Poder apresentar ferramentas administrativas capazes de auxiliar o servidor no planejamento e  organização das atividades em seu local de trabalho; Aumentar nível de qualidade das entregas aos cidadãos, através do aumento do número de servidores capacitados e treinados|
+|**Frustrações** |Não ter um sistema que auxilie na organização das atividades operacionais da Escola de Governo; Falta de padronização das informações no local de trabalho; Dificuldade de obter informações consistentes e atualizadas; Não ter informações disponibilizadas on-line; Ter que trabalhar com planilhas eletrônicas, que necessitam de atualização manual|
 
 ### <span style="color:Green">**`Joaquim Lara`**
 
@@ -51,7 +51,7 @@ A fim de definir de maneira minuciosa a especificação do problema e os pontos 
 |:---------------------------------------:|:-------------------------------:|
 |**Ocupação** | Ponto focal da Secretaria
 |**Motivação** | Administrar de forma eficiente todos os cursos que são de minha responsabilidade
-|**Frustrações** | Dificuldade de acessar as informações especificas dos cursos que administro.|
+|**Frustrações** | Dificuldade de acessar as informações especificas dos cursos que administro|
   
 ### <span style="color:Green">**`Rosana Avelar`**
 
@@ -85,7 +85,7 @@ A tabela a seguir apresenta os requisitos do projeto, identificando a prioridade
 
 |ID    |Descrição do Requisito| Prioridade |
 |------|----------------------|------------|
-|RF-01|	Deve possuir tela "Home" e fornecer acesso a página de cadastro de servidores efetivos e comissionados (alunos) e também login para alunos já cadastrados;|ALTA|
+|RF-01|	Deve possuir tela "Home" e fornecer acesso a página de cadastro de servidores efetivos e comissionados (alunos) e também login para alunos já cadastrados|ALTA|
 |RF-02|	Deve possibilitar o cadastro de alunos  para o acesso a página home logada permitindo a visualização das ofertas de cursos disponíveis|MÉDIA|
 |RF-03|	A aplicação deve possuir a grade de programação de cursos contendo todos as informações específicas de cada curso|ALTA|
 |RF-04|Deve disponibilizar ao usuário as opções de escolha conforme categoria: cursos internos (parceria com instituições de ensino), cursos externos (contratados via dispensa de licitação), cursos desenvolvidos pelas próprias secretarias/Órgãos/Entidades|MÉDIA|
