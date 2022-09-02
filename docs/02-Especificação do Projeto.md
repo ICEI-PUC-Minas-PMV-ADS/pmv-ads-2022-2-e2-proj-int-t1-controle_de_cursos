@@ -115,4 +115,4 @@ As questões que limitam a execução desse projeto e que se configuram como obr
 
 Dada a elicitação dos requisitos funcionais, utilizamos um modelo gráfico com as descrições sucintas dos casos de uso e dos atores. Ele contempla a fronteira do sistema e o detalhamento dos requisitos funcionais com a indicação dos atores, casos de uso e seus relacionamentos.
 
-![Diagrama de de Casos de Uso](img/DiagramaCasosDeUso4.png)
+![Diagrama de de Casos de Uso](img/DiagramaCasosDeUso6.png)
