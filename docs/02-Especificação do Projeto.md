@@ -16,13 +16,15 @@ A fim de definir de maneira minuciosa a especificação do problema e os pontos 
 
 ### <span style="color:Green">**`Rafael Souza`**
 
+
 |<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/DriveMyCar/blob/master/docs/img/users/Felipe.jpg" width="160" height="100">   | **Rafael Souza** <br> 34 anos   |
 |:---------------------------------------:|:-------------------------------:|
 |**Ocupação** | Fornecedor de cursos
 |**Motivação** | Aumento da qualidade e disponibilidade da educação no Brasil
 |**Frustrações** | Dificuldade em achar plataformas confiáveis para cadastrar os cursos ofertados pela sua empresa, bem como seu portifólio|
 
-### <span style="color:Green">**`Maria de Assis Pereira`**
+
+  ### <span style="color:Green">**`Maria de Assis Pereira`**
 
 
 |<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/Projeto-Grupo-6/blob/master/maria.jpg" width="150" height="100">   | **Maria de Assis Pereira** <br> 35 anos   |
@@ -56,7 +58,8 @@ Com base na análise das personas foram identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/DESEJO ... `O QUE` |PARA ... `PORQUE`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|João Gomes (aluno, servidor comissionado)|	Receber informações dos cursos disponíveis, poder expressar opinião e sugestões, ter canal direto ao suporte da Escola de Governo.|	Acessar e imprimir as informações resumidas de todos os cursos que realizei, acessar e imprimir todos os meus atestados|
+|José Alberto de Souza (aluno, servidor efetivo)|	Receber informações dos cursos disponíveis, poder expressar opinião e sugestões, ter canal direto ao suporte da Escola de Governo	|Acessar e imprimir as informações resumidas de todos os cursos que realizei, acessar e imprimir todos os meus certificados|
+|João (aluno, servidor comissionado)|	Receber informações dos cursos disponíveis, poder expressar opinião e sugestões, ter canal direto ao suporte da Escola de Governo.|	Acessar e imprimir as informações resumidas de todos os cursos que realizei, acessar e imprimir todos os meus atestados|
 |Rafael Souza (parceiro, servidor de cursos)| Cadastrar os dados da minha empresa, cadastrar o meu portifólio de cursos| Participar dos processos licitatórios e de contratações dos cursos|
 |Maria de Assis Pereira (administradora do sistema)|	Acessar todos os dados dos alunos, acessar todos os dados dos cursos|	Controlar os acessos e permissões dos alunos, montar a grade de programação dos cursos|
 |Joaquim Lara (ponto focal da secretaria/órgão/entidade)| Acessar a grade de programação dos cursos, acessar as informações de todos cursos feitos pelos servidores da minha área de acompanhamento, concentrar os contatos com os servidores em um canal de comunicação específico na plataforma|	Programar a distribuição das vagas aos servidores da minha área de responsabilidade|
@@ -71,14 +74,14 @@ A tabela a seguir apresenta os requisitos do projeto, identificando a prioridade
 
 |ID    |Descrição do Requisito| Prioridade |
 |------|----------------------|------------|
-|RF-01|	Deve possuir tela "Home" e fornecer acesso a página de cadastro de servidores efetivos e comissionados (alunos) e também login para alunos já cadastrados|ALTA|
-|RF-02|	Deve possibilitar o cadastro de alunos  para o acesso a página home logada permitindo a visualização das ofertas de cursos disponíveis|MÉDIA|
-|RF-03|	A aplicação deve possuir a grade de programação de cursos contendo todos as informações específicas de cada curso|ALTA|
-|RF-04|Deve disponibilizar ao usuário as opções de escolha conforme categoria: cursos internos (parceria com instituições de ensino), cursos externos (contratados via dispensa de licitação), cursos desenvolvidos pelas próprias secretarias/Órgãos/Entidades|MÉDIA|
-|RF-05|	Deve disponibilizar cadastro específico para o fornecedor de curso externo inserir os dados da empresa e a documentação necessária para o cadastramento das propostas de cursos, arquivos necessários à contratação, verificação documental e validação das informações cadastrais|ALTA|
-|RF-06| Sistema de marcação, para que o aluno salve como favorita a opção de cursos desejados e sugeridos, para que se possa estimar a demanda latente e a real necessidade na ótica do aluno|BAIXA|
-|RF-07| A aplicação deve possibilitar o cadastro e registro das informações pertinentes ao processo de licitação/negociação dos cursos|ALTA|
-|RF-08| Fornecer página com histórico das solicitações ja realizadas pelo aluno, sejam elas em andamento ou encerradas|MÉDIA|
+|RF-01|	Deve possuir tela "Home" e fornecer acesso a página de cadastro de servidores efetivos e comissionados (alunos) e também login para alunos já cadastrados.|ALTA|
+|RF-02|	Deve possibilitar o cadastro de alunos  para o acesso a página home logada permitindo a visualização das ofertas de cursos disponíveis.|MÉDIA|
+|RF-03|	A aplicação deve possuir a grade de programação de cursos contendo todos as informações específicas de cada curso.|ALTA|
+|RF-04|Deve disponibilizar ao usuário as opções de escolha conforme categoria: cursos externos (parceria com instituições de ensino e contratados por meio de licitação) e cursos internos (desenvolvidos pelos próprios servidores municipais da Administração Direta (Secretarias Municipais e/ou Órgãos) ou pelos servidores das Entidades da Administração Indireta (Autarquias e/ou Fundações).|MÉDIA|
+|RF-05|	Deve disponibilizar cadastro específico para o fornecedor de curso externo inserir os dados da empresa e a documentação necessária para o cadastramento das propostas de cursos, arquivos necessários à contratação, verificação documental e validação das informações cadastrais.|ALTA|
+|RF-06| Sistema de marcação, para que o aluno salve como favorita a opção de cursos desejados e sugeridos, para que se possa estimar a demanda latente e a real necessidade na ótica do aluno.|BAIXA|
+|RF-07| A aplicação deve possibilitar o cadastro e registro das informações pertinentes ao processo de licitação/negociação dos cursos.|ALTA|
+|RF-08| Fornecer página com histórico das solicitações ja realizadas pelo aluno, sejam elas em andamento ou encerradas.|MÉDIA|
 
 
 ### Requisitos não Funcionais
@@ -106,10 +109,11 @@ As questões que limitam a execução desse projeto e que se configuram como obr
 |RE-01|	O projeto deverá ser entregue no final do semestre letivo, não podendo extrapolar a data de 11/12/2022|
 |RE-02|	O aplicativo deve se restringir às tecnologias básicas da Web no back-end|
 |RE-03|	O sistema não deve permitir a utilização para outros fins além de controle de cursos|
-|RE-04| Não será permitido o uso da plataforma Heroku|
+|RE-04| O acesso às aulas e todo conteúdo dos cursos será feito em outro aplicativo específico, desenvolvido na plataforma Moodle|
+|RE-05| Não será permitido o uso da plataforma Heroku| 
 
 ## Diagrama de Casos de Uso
 
 Dada a elicitação dos requisitos funcionais, utilizamos um modelo gráfico com as descrições sucintas dos casos de uso e dos atores. Ele contempla a fronteira do sistema e o detalhamento dos requisitos funcionais com a indicação dos atores, casos de uso e seus relacionamentos.
 
-![Diagrama de de Casos de Uso](img/DiagramaCasosDeUso6.png)
+![Diagrama de de Casos de Uso](img/DiagramaCasosDeUso4.png)
