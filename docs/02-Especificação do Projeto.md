@@ -69,9 +69,9 @@ Com base na análise das personas foram identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/DESEJO ... `O QUE` |PARA ... `PORQUE`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|José Alberto de Souza (aluno, servidor efetivo)|	Receber informações dos cursos disponíveis, poder expressar opinião e sugestões, ter canal direto ao suporte da Escola de Governo.	|Acessar e imprimir as informações resumidas de todos os cursos que realizei, acessar e imprimir todos os meus certificados|
+|José Alberto de Souza (aluno, servidor efetivo)|	Receber informações dos cursos disponíveis, poder expressar opinião e sugestões, ter canal direto ao suporte da Escola de Governo	|Acessar e imprimir as informações resumidas de todos os cursos que realizei, acessar e imprimir todos os meus certificados|
 |João (aluno, servidor comissionado)|	Receber informações dos cursos disponíveis, poder expressar opinião e sugestões, ter canal direto ao suporte da Escola de Governo.|	Acessar e imprimir as informações resumidas de todos os cursos que realizei, acessar e imprimir todos os meus atestados|
-|Rafael Souza (parceiro, servidor de cursos)| Cadastrar os dados da minha empresa, cadastrar o meu portifólio de cursos.| Participar dos processos licitatórios e de contratações dos cursos|
+|Rafael Souza (parceiro, servidor de cursos)| Cadastrar os dados da minha empresa, cadastrar o meu portifólio de cursos| Participar dos processos licitatórios e de contratações dos cursos|
 |Maria de Assis Pereira (administradora do sistema)|	Acessar todos os dados dos alunos, acessar todos os dados dos cursos|	Controlar os acessos e permissões dos alunos, montar a grade de programação dos cursos|
 |Joaquim Lara (ponto focal da secretaria/órgão/entidade)| Acessar a grade de programação dos cursos, acessar as informações de todos cursos feitos pelos servidores da minha área de acompanhamento, concentrar os contatos com os servidores em um canal de comunicação específico na plataforma|	Programar a distribuição das vagas aos servidores da minha área de responsabilidade|
 |Rosana Avelar (gestora da escola de governo)|	Acessar um painel de indicadores (de desempenho dashboard) dos alunos e dos cursos realizados|	Gerar relatórios aos superiores hierárquicos e auxilia-los na tomada de decisões|
@@ -91,7 +91,7 @@ A tabela a seguir apresenta os requisitos do projeto, identificando a prioridade
 |RF-04|Deve disponibilizar ao usuário as opções de escolha conforme categoria: cursos internos (parceria com instituições de ensino), cursos externos (contratados via dispensa de licitação), cursos desenvolvidos pelas próprias secretarias/Órgãos/Entidades|MÉDIA|
 |RF-05|	Deve disponibilizar cadastro específico para o fornecedor de curso externo inserir os dados da empresa e a documentação necessária para o cadastramento das propostas de cursos, arquivos necessários à contratação, verificação documental e validação das informações cadastrais|ALTA|
 |RF-06| Sistema de marcação, para que o aluno salve como favorita a opção de cursos desejados e sugeridos, para que se possa estimar a demanda latente e a real necessidade na ótica do aluno|BAIXA|
-|RF-07| A aplicação deve possibilitar o cadastro e registro das informações pertinentes ao processo de licitação/negociação dos cursos;|ALTA|
+|RF-07| A aplicação deve possibilitar o cadastro e registro das informações pertinentes ao processo de licitação/negociação dos cursos|ALTA|
 |RF-08| Fornecer página com histórico das solicitações ja realizadas pelo aluno, sejam elas em andamento ou encerradas|MÉDIA|
 
 
