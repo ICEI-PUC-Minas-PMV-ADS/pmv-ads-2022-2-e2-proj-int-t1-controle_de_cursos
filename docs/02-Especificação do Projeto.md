@@ -30,7 +30,7 @@ A fim de definir de maneira minuciosa a especificação do problema e os pontos 
 |<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/Projeto-Grupo-6/blob/master/maria.jpg" width="150" height="100">   | **Maria de Assis Pereira** <br> 35 anos   |
 |:---------------------------------------:|:-------------------------------:|
 |**Ocupação** | Administradora do Sistema |
-|**Motivação** Prover qualidade e suporte aos processos e pessoas responsáveis pela gestão e manutenção das atividades operacionais na Escola de Governo.
+|**Motivação** | Prover qualidade e suporte aos processos e pessoas responsáveis pela gestão e manutenção das atividades operacionais na Escola de Governo.
 |**Frustrações** |Não ter um sistema que auxilie no planejamento e na organização das atividades operacionais da Escola de Governo; Falta de padronização das informações no local de trabalho; Dificuldade de obter informações consistentes e atualizadas; Não ter informações disponibilizadas on-line; Ter que trabalhar com planilhas eletrônicas, que necessitam de atualização manual.|
 
 ### <span style="color:Green">**`Joaquim Lara`**
