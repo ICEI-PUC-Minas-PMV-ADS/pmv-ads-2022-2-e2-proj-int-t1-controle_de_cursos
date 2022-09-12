@@ -15,7 +15,7 @@ Criação de uma aplicação ASP CORE .NET MVC com a premissa de gerenciar os cu
 *  Rafael Penido De Souza
 *  Renato Liberato Ferreira
 *  Robert Teixeira Ribeiro
-*  Vitor Martins de Santanna
+*  [Vitor Martins de Santanna](https://github.com/vitormartins1)
 
 ## Orientador
 
