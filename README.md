@@ -12,7 +12,7 @@ Criação de uma aplicação ASP CORE .NET MVC com a premissa de gerenciar os cu
 
 *  Pedro Guimarães Santos
 *  Rafael Alvarenga Rodrigues
-*  Rafael Penido De Souza
+*  [Rafael Penido De Souza](https://github.com/rafaelpenido)
 *  Renato Liberato Ferreira
 *  Robert Teixeira Ribeiro
 *  [Vitor Martins de Santanna](https://github.com/vitormartins1)
