@@ -57,10 +57,10 @@ As ferramentas empregadas no projeto são:
 |----------|------------|------------|
 | Repositório de código fonte | Github | https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e2-proj-int-t1-controle_de_cursos |
 | Documentos do projeto | GitHub | https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e2-proj-int-t1-controle_de_cursos |
-| Projeto de Interface e Wireframes | Figma | 
 | Gerenciamento do Projeto | GitHub | https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/93/views/1 |
 | Reuniões de discussão | Microsoft Teams | [l1nq.com/NzCYC ](https://l1nq.com/NzCYC)|
 | Acompanhamentos diários do andamento de atividades | WhatsApp | Grupo do projeto no WhatsApp |
+| Projeto de Interface e Wireframes | Figma | 
 
 Para o repositório de código fonte, gerenciamento do projeto, bem como para armazenamento e alteração dos documentos do projeto será utilizado o GitHub, instrumento robusto e amplamente usado no mercado. Para o projeto de interface e Wireframes, será utilizado o Figma, um editor online de gráficos com ênfase em prototipagem. Além disso, a comunicação ágil do grupo para acompanhamento diário das atividades se dará pelo uso da rede WhatsApp, enquanto as reuniões de discussão serão pelo Microsoft Teams.
 
