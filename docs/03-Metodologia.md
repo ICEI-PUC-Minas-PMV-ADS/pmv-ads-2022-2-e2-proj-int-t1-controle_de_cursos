@@ -33,7 +33,7 @@ A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para def
 A equipe está organizada da seguinte maneira:
 
 - Scrum Master: Renato
-- Product Owner: Rafael
+- Product Owner: Renato
 - Equipe de Desenvolvimento: Pedro, Rafael A, Rafael P, Renato, Robert, Vitor
 - Equipe de Design: Pedro, Rafael A, Rafael P, Renato, Robert, Vitor
 
