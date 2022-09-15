@@ -47,7 +47,9 @@ Doing: Quando uma tarefa tiver sido iniciada, ela é movida para cá.
 Test: Checagem de Qualidade.
 Done: nesta lista são colocadas as tarefas que passaram pelos testes e controle de qualidade e estão prontos para ser entregues ao usuário. Não há mais edições ou revisões necessárias, ele está agendado e pronto para a ação.
 Locked: Quando alguma coisa impede a conclusão da tarefa, ela é movida para esta lista juntamente com um comentário sobre o que está travando a tarefa.
-O quadro kanban do grupo no Github está disponível através da URL https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/93 e é apresentado, na Figura abaixo.
+O quadro kanban do grupo no Github está disponível através da URL https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/93 e é apresentado, na Figura abaixo:
+
+![](/docs/img/Screenshot_1.jpg)
 
 ### Ferramentas
 
