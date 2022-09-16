@@ -64,6 +64,16 @@ As ferramentas empregadas no projeto são:
 | Reuniões de discussão | Microsoft Teams | [l1nq.com/NzCYC ](https://l1nq.com/NzCYC)|
 | Acompanhamentos diários do andamento de atividades | WhatsApp | Grupo do projeto no WhatsApp |
 | Projeto de Interface e Wireframes | Figma | 
+| Edição e Compilação de Código Fonte | Visual Studio Comunity 2022 | |
+| Banco de Dados Relacional | SQL Server | |
+
+#### Tecnologias
+
+| Tecnologia | Tipo
+| .NET 6 | Framework
+| Entity Framework Core | Biblioteca
 
 Para o repositório de código fonte, gerenciamento do projeto, bem como para armazenamento e alteração dos documentos do projeto será utilizado o GitHub, instrumento robusto e amplamente usado no mercado. Para o projeto de interface e Wireframes, será utilizado o Figma, um editor online de gráficos com ênfase em prototipagem. Além disso, a comunicação ágil do grupo para acompanhamento diário das atividades se dará pelo uso da rede WhatsApp, enquanto as reuniões de discussão serão pelo Microsoft Teams.
+
+O projeto será codificado utilizando a IDE Visual Studio Comunity 2022 com o SDK do .NET6 fazendo uso do ASP.NET Core MVC que nos possibilita criar um site dinâmico com acesso a dados de forma simples e intuitiva e com reaproveitamento de código. O Entity Framework Core será usado como ORM de acesso ao banco de dados e para o mapeamento e geração do banco de dados usaremos a técnica 'Code First', que consiste em escrever os Modelos de Entidades que representam tabelas do banco de dados e partir dos modelos gerar o banco de dados com seus respectivos relacionamentos entre entidades. Essa abordagem também nos permite manter um controle de versão sobre a evolução do banco de dados, novas tabelas e propriedades criadas utilizando o 'Migration'. 
 
