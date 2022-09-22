@@ -19,6 +19,8 @@ O Modelo ER representa através de um diagrama como as entidades (coisas, objeto
 
 Sugestão de ferramentas para geração deste artefato: LucidChart e Draw.io.
 
+![Diagrama de Classes - Aplicação "Controle de Cursos"](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e2-proj-int-t1-controle_de_cursos/blob/desenvolvimento/docs/img/Fluxo%20-%20Esquema%20gr%C3%A1fico%20do%20aplicativo%20Controle%20de%20Cursos.png)
+
 A referência abaixo irá auxiliá-lo na geração do artefato “Modelo ER”.
 
 > - [Como fazer um diagrama entidade relacionamento | Lucidchart](https://www.lucidchart.com/pages/pt/como-fazer-um-diagrama-entidade-relacionamento)
