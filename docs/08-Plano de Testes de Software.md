@@ -45,12 +45,6 @@ Por exemplo:
 | Passos 	| - Acessar o sistema <br> - Efetuar o login como fornecedor de cursos <br> - Clicar na opção de cadastrar curso <br> - Preencher os campos necessários <br> - Clicar em "Cadastrar curso" |
 |Critério de Êxito | - O cadastro do curso foi efetuado com sucesso. |
 |  	|  	|
-| **Caso de Teste** 	| **CT-08 – Em branco**	|
-|Requisito Associado | RF-07	- A aplicação deve possibilitar o cadastro e registro das informações pertinentes ao processo de licitação/negociação dos cursos. |
-| Objetivo do Teste 	| Verificar se o usuário consegue realizar login. |
-| Passos 	| -  <br> - <br> -  <br> -  <br> -  <br> -  |
-|Critério de Êxito | -  |
-|  	|  	|
 | **Caso de Teste** 	| **CT-09 – Acessar historico de solicitações de cursos**	|
 |Requisito Associado | RF-08	- Fornecer página com histórico das solicitações ja realizadas pelo aluno, sejam elas em andamento ou encerradas. |
 | Objetivo do Teste 	| Verificar se o fornecedor de cursos é capaz de cadastrar uma opção de curso. |
