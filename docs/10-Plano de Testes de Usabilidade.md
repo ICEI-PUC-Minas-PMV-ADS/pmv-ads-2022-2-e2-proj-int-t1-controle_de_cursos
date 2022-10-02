@@ -1,15 +1,46 @@
 # Plano de Testes de Usabilidade
 
-Os testes de usabilidade permitem avaliar a qualidade da interface com o usuário da aplicação interativa.
+Os testes de usabilidade avaliam, não só a experiência dos usuários no momento em que interagem com o sistema, mas também como as funcionalidades e as regras de negócio impactam na interação entre usuário e o sistema. Busca-se testar neste caso se o tipo de informação, a linguagem, o design das páginas e a plataforma tecnológica utilizados proporcionam a eles a melhor experiência possível de uso. 
 
-Um plano de teste de usabilidade deverá conter: o detalhamento dos objetivos (em função dos requisitos levantados/implementados), dos critérios que serão utilizados para a seleção dos participantes, dos procedimentos a serem adotados pelos condutores de teste (por exemplo: os testes serão presenciais ou remotos? o método será observação direta, medição ou avaliação?), das tarefas a serem executadas, dos dados a serem coletados (quantidade de cliques, número de erros, tempo etc.), a ordem de execução das tarefas e das etapas da sessão de teste, recursos demandados, métricas coletadas etc.
+Os testes terão como objetivos obter respostas para os seguintes pontos:
 
-Para cada voluntário do teste, é fundamental coletar e apresentar todos os dados/métricas previamente definidos, mas não se esqueça: atendendo à LGPD (Lei Geral de Proteção de Dados), nenhum dado sensível, que permita identificar o voluntário, deverá ser apresentado).
+1)	O sistema é intuitivo e de fácil utilização?
+2)	O sistema é responsivo?
+3)	Os usuários alcançam seus objetivos em poucos cliques?
+4)	A navegabilidade é agradável e fluída?
+5)	Fornecedores enviam documentos nos formatos aceitos sem de forma ágil?
 
-As referências abaixo irão auxiliá-lo na geração do artefato "Plano de Testes de Usabilidade".
+As dimensões abordadas neste teste de usabilidade serão as seguintes:
+Usuários: 08 usuários com idades variando entre 20 e 60 anos com perfil social variado
+Ferramenta de Coleta de Dados: Registro de impressões durante a realização do teste de forma presencial
+Equipe (Acompanhamento do Teste): O acompanhamento será feito por 01 facilitador/observador	
+Report:  O facilitador/observador fará todas as anotações pertinentes em relatório especifico e trará para análise da equipe de desenvolvimento
 
-> **Links Úteis**:
-> - [Teste De Usabilidade: O Que É e Como Fazer Passo a Passo (neilpatel.com)](https://neilpatel.com/br/blog/teste-de-usabilidade/)
-> - [Teste de usabilidade: tudo o que você precisa saber! | by Jon Vieira | Aela.io | Medium](https://medium.com/aela/teste-de-usabilidade-o-que-voc%C3%AA-precisa-saber-39a36343d9a6/)
-> - [Planejando testes de usabilidade: o que (e o que não) fazer | iMasters](https://imasters.com.br/design-ux/planejando-testes-de-usabilidade-o-que-e-o-que-nao-fazer/)
-> - [Ferramentas de Testes de Usabilidade](https://www.usability.gov/how-to-and-tools/resources/templates.html)
+## Planejamento de realização de testes com usuários definindo as operações que os usuários devem realizar ##
+
+|Caso de Teste | 01 - Verificar responsividade|
+|:--|:--|
+|**Objetivo do teste**| Avaliar se o sistema é de fácil utilização e responsivo por usuário “ALUNO”| 
+||**Passos**|
+||1) Acessar o site|
+||2) Efetuar o cadastro como aluno|
+||3) Acessar algum curso do menu “CURSOS”|
+||4) Iniciar e interromper o curso em questão|
+||5) Continuar o curso iniciado a partir do menu “CURSOS” > “MEUS CURSOS”|
+||6) Efetuar “LOGOUT”|
+|**Critérios de Êxito**|O usuário deve considerar o sistema intuitivo e de fácil utilização|
+
+|Caso de Teste | 02 - Verificar responsividade|
+|:--|:--|
+|**Objetivo do teste**| Avaliar se o sistema é de fácil utilização e responsivo por usuário “FORNECEDOR”| 
+||**Passos**|
+||1) Acessar o site|
+||2) Efetuar o cadastro como fornecedor|
+||3) Acessar o menu “FORNECEDORES” > “NOVO CURSO”|
+||4) Preencher  o formulário e anexar arquivos nos formatos aceitos|
+||5) Enviar oferta de novo curso e obter resposta de sucesso do sistema|
+||6) Efetuar “LOGOUT”|
+|**Critérios de Êxito**|O fornecedor deve considerar o sistema intuitivo e de fácil utilização|
+
+##Confecção e Analise do relatório##
+O observador irá registrar o tempo para conclusão dos testes, a opinião do usuário em relação ao sistema, sugestões de melhorias e outras observações de utilização que julgar pertinente. A equipe de posse dos relatórios fará a avaliação e ajustes necessários.
