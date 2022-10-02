@@ -61,7 +61,7 @@ As ferramentas empregadas no projeto são:
 | Gerenciamento do Projeto | GitHub | https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/93/views/1 |
 | Reuniões de discussão | Microsoft Teams | [l1nq.com/NzCYC ](https://l1nq.com/NzCYC)|
 | Acompanhamentos diários do andamento de atividades | WhatsApp | Grupo do projeto no WhatsApp |
-| Projeto de Interface e Wireframes | Figma | 
+| Projeto de Interface e Wireframes | Figma/LucidChart | 
 | Edição e Compilação de Código Fonte | Visual Studio Comunity 2022 | |
 | Banco de Dados Relacional | SQL Server | |
 
