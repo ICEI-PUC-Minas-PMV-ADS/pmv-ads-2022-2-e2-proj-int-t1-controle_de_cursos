@@ -2,113 +2,55 @@
 
 <span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>
 
-Este documento descreve os requisitos a serem testados, os tipos de testes definidos para cada iteração, os recursos a serem empregados e o cronograma dos testes ao longo do projeto. 
+Apresente os cenários de testes utilizados na realização dos testes da sua aplicação. Escolha cenários de testes que demonstrem os requisitos sendo satisfeitos.
 
-Os requisitos para realização dos testes de software são:
+Não deixe de enumerar os casos de teste de forma sequencial e de garantir que o(s) requisito(s) associado(s) a cada um deles está(ão) correto(s) - de acordo com o que foi definido na seção "2 - Especificação do Projeto". 
 
-* Site publicado na Internet 
-* Navegador da Internet - Chrome, Firefox ou Edge 
-* Conectividade de Internet para acesso às plataformas (APISs) 
-
-Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
-
-|**Caso de Teste**|**Teste 01**|
-| :-: | :-: |
-|**Requisitos Associados**|Tela "Home" e acesso a página login para alunos já cadastrados. |
-|**Objetivo do Teste**|Usuário conseguir efetuar login no sistema.|
-||**Passos**|
-||1) Acessar o Navegador.|
-||2) Informar o endereço do Site: |
-||3)	Selecionar no menu a opção “ENTRAR”|
-||4) Inserir usuário e senha|
-||5) Clicar em “ACESSAR"|
-|**Critérios de Êxito**|Após clicar em enviar deverá aparecer o nome do usuário no canto superior direito.|
-
-
-|**Caso de Teste**|**Teste 02**|
-| :-: | :-: |
-|**Requisitos Associados**|Acesso à página de cadastro de servidores efetivos e comissionados (alunos). |
-|**Objetivo do Teste**|Sistema solicitar informações para cadastro e efetuar login com o novo cadastro.|
-||**Passos**|
-||1) Acessar o Navegador.|
-||2) Informar o endereço do Site: |
-||3)	Selecionar no menu a opção “CADASTRAR”|
-||4)	Inserir dados solicitados no formulário|
-||5) Clicar em “SALVAR"|
-|**Critérios de Êxito**|Após clicar em SALVAR deverá aparecer a mensagem "Cadastro efetuado com sucesso" e o usuário ficará logado no sistema.|
-
-
-|**Caso de Teste**|**Teste 03**|
-| :-: | :-: |
-|**Requisitos Associados**|Visualização de cursos disponíveis para usuário logado. |
-|**Objetivo do Teste**|Usuário deve conseguir visualizar e acessar os cursos disponíveis.|
-||**Passos**|
-||1) Acessar o Navegador.|
-||2) Informar o endereço do Site: |
-||3)	Efetuar “LOGIN”|
-||4)	Após o login o site mostra os cursos disponíveis|
-||5) Clicar em um dos cursos|
-||6)	O site informa a descrição do curso e duração|
-||7)	Usuário clica no botão “INICIAR”|
-|**Critérios de Êxito**|Após clicar em “INICIAR” deverá começar o curso e este ficará com o status “EM ANDAMENTO”.|
-
-
-|**Caso de Teste**|**Teste 04**|
-| :-: | :-: |
-|**Requisitos Associados**|Disponibilizar ao usuário escolha conforme categoria: cursos externos e cursos internos.|
-|**Objetivo do Teste**|Usuário selecionar categoria do curso.|
-||**Passos**|
-||1) Acessar o Navegador.|
-||2) Informar o endereço do Site: |
-||3)	Efetuar “LOGIN”|
-||4)	Selecionar no menu “CURSOS” > “CURSOS INTERNOS”|
-||5) Sistema exibe os cursos desenvolvidos pelos próprios servidores|
-||6)	Selecionar no menu “CURSOS” > “CURSOS EXTERNOS”|
-||7)	Sistema exibe os cursos em parceria com instituições de ensino e contratados por meio de licitação|
-|**Critérios de Êxito**|Usuário conseguir visualizar cursos de acordo com a categoria desejada.|
-
-
-|**Caso de Teste**|**Teste 05**|
-| :-: | :-: |
-|**Requisitos Associados**|Cadastro específico para o fornecedor de curso externo.|
-|**Objetivo do Teste**|Fornecedor conseguir efetuar login no sistema.|
-||**Passos**|
-||1) Acessar o Navegador.|
-||2) Informar o endereço do Site: |
-||3)	Selecionar no menu a opção “CADASTRAR”|
-||4)	Inserir dados solicitados no formulário|
-||5) Clicar em “ENVIAR"|
-|**Critérios de Êxito**|Após clicar em enviar deverá aparecer o nome do fornecedor no canto superior direito.|
-
-
-|**Caso de Teste**|**Teste 06**|
-| :-: | :-: |
-|**Requisitos Associados**|Fornecedor efetuar o cadastramento das propostas de cursos.|
-|**Objetivo do Teste**|Fornecedor conseguir enviar a documentação necessária para o cadastramento das propostas de cursos.|
-||**Passos**|
-||1) Acessar o Navegador.|
-||2) Informar o endereço do Site: |
-||3)	Efetuar “LOGIN”|
-||4)	Selecionar no menu “FORNECEDORES” > “NOVO CURSO”|
-||5)	Inserir dados solicitados no formulário e anexar arquivos se for o caso|
-||6)	Clicar em “ENVIAR”|
-|**Critérios de Êxito**|Após clicar em enviar deverá aparecer a confirmação de que a proposta foi enviada.|
-
-
-|**Caso de Teste**|**Teste 07**|
-| :-: | :-: |
-|**Requisitos Associados**|Fornecer página com histórico das solicitações já realizadas pelo aluno.|
-|**Objetivo do Teste**|Usuário acessar cursos já finalizados ou em andamento.|
-||**Passos**|
-||1) Acessar o Navegador.|
-||2) Informar o endereço do Site: |
-||3)	Efetuar “LOGIN”|
-||4)	Selecionar no menu “CURSOS” > “MEUS CURSOS”|
-||5)	Sistema exibe os cursos já finalizados e em andamento|
-||6)	Usuário seleciona algum curso em exibição|
-||7)	O site informa a descrição do curso e duração|
-||8)	Usuário clica no botão “INICIAR”|
-|**Critérios de Êxito**|Após clicar em “INICIAR” deverá começar o curso caso seja um curso finalizado ou continuar de onde parou caso seja um curso em andamento.|
+Por exemplo:
+ 
+| **Caso de Teste** 	| **CT-01 – Acesso a pagina "Home e cadastro"** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-01 - Deve possuir tela "Home" e fornecer acesso a página de cadastro de servidores efetivos e comissionados (alunos) e também login para alunos já cadastrados. |
+| Objetivo do Teste 	| Acessar a pagina "Home" e utilizar suas as funcionalidades |
+| Passos 	| - Acessar o sistema <br> - Clicar em fazer cadastro (opção para servidores efetivos e alunos) <br> - Preencher os campos obrigatórios <br> - Clicar em "Registrar" |
+|Critério de Êxito | - O cadastro foi realizado com sucesso. |
+|  	|  	|
+| **Caso de Teste** 	| **CT-02 – Efetuar login**	|
+|Requisito Associado | RF-01 - Deve possuir tela "Home" e fornecer acesso a página de cadastro de servidores efetivos e comissionados (alunos) e também login para alunos já cadastrados. |
+| Objetivo do Teste 	| Verificar se o usuário é capaz de realizar login. |
+| Passos 	| - Acessar o sistema <br> - Clicar no botão de Login <br> - Preencher o campo de CPF <br> - Preencher o campo da senha <br> - <br> - Clicar em "Login" |
+|Critério de Êxito | - O login foi realizado com sucesso. |
+|  	|  	|
+| **Caso de Teste** 	| **CT-03 – Visualizar opções cursos**	|
+|Requisito Associado | RF-02	- Deve possibilitar o cadastro de alunos para o acesso a página home logada permitindo a visualização das ofertas de cursos disponíveis. |
+| Objetivo do Teste 	| Verificar se o usuário consegue visualizar as opções de cursos disponiveis. |
+| Passos 	| - Fazer o login <br> - Clicar em cursos disponiveis |
+|Critério de Êxito | - Visualizar as opções de cursos disponiveis. |
+|  	|  	|
+| **Caso de Teste** 	| **CT-04 – Ver detalhes do curso desejado**	|
+|Requisito Associado | RF-03	- A aplicação deve possuir a grade de programação de cursos contendo todos as informações específicas de cada curso. |
+| Objetivo do Teste 	| Verificar se o usuário consegue acessar o detalhamento dos cursos. |
+| Passos 	| - Fazer o login <br> - Clicar em cursos disponiveis <br> - Selecionar o curso desejado <br> - Verificar os detalhes referente ao curso <br> - Voltar a pagina de cursos |
+|Critério de Êxito | - Foi possivel visualizar os detalhes do curso |
+|  	|  	|
+| **Caso de Teste** 	| **CT-05 – Filtrar a pesquisa de cursos de acordo com a opção desejada**	|
+|Requisito Associado | RF-04	- Deve disponibilizar ao usuário as opções de escolha conforme categoria: cursos externos (parceria com instituições de ensino e contratados por meio de licitação) e cursos internos (desenvolvidos pelos próprios servidores municipais da Administração Direta (Secretarias Municipais e/ou Órgãos) ou pelos servidores das Entidades da Administração Indireta (Autarquias e/ou Fundações). |
+| Objetivo do Teste 	| Verificar se o usuario consegue filtrar as opções de curso. |
+| Passos 	| - Fazer o login <br> - Clicar em cursos disponiveis <br> - Selecionar o filtro de acordo com a opção de curso desejada <br> - Clicar em filtrar <br> - Verificar se o sistema retornou a opção desejada. |
+|Critério de Êxito | - A pesquisa foi filtrada de acordo com a opção do usuário. |
+|  	|  	|
+| **Caso de Teste** 	| **CT-06 – Cadastro de curso**	|
+|Requisito Associado | RF-05	- Deve disponibilizar cadastro específico para o fornecedor de curso externo inserir os dados da empresa e a documentação necessária para o cadastramento das propostas de cursos, arquivos necessários à contratação, verificação documental e validação das informações cadastrais. |
+| Objetivo do Teste 	| Verificar se o fornecedor de cursos é capaz de cadastrar uma opção de curso. |
+| Passos 	| - Acessar o sistema <br> - Efetuar o login como fornecedor de cursos <br> - Clicar na opção de cadastrar curso <br> - Preencher os campos necessários <br> - Clicar em "Cadastrar curso" |
+|Critério de Êxito | - O cadastro do curso foi efetuado com sucesso. |
+|  	|  	|
+| **Caso de Teste** 	| **CT-09 – Acessar historico de solicitações de cursos**	|
+|Requisito Associado | RF-08	- Fornecer página com histórico das solicitações ja realizadas pelo aluno, sejam elas em andamento ou encerradas. |
+| Objetivo do Teste 	| Verificar se o fornecedor de cursos é capaz de cadastrar uma opção de curso. |
+| Passos 	| - Acessar o sistema <br> - Efetuar o login como aluno <br> - Clicar na opção de historico <br> - Verificar os cursos em andamento ou encerrados <br> - Voltar a pagina inicial |
+|Critério de Êxito | - Verificação de historico feita com sucesso. |
+|  	|  	|
 
 
 > **Links Úteis**:
