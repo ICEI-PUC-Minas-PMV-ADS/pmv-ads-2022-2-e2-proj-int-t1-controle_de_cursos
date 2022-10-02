@@ -4,13 +4,13 @@ Definição de como o software é estruturado em termos dos componentes que faze
 
 ## Diagrama de Classes
 
-O diagrama de classes ilustra graficamente como será a estrutura do software, e como cada uma das classes da sua estrutura estarão interligadas.
+O diagrama de classes ilustra graficamente como será a estrutura do software, e como cada uma das classes da sua estrutura estarão interligadas. Está disponível através do link https://lucid.app/lucidchart/c78da790-7f58-4355-8b80-1b24befbd204/edit?invitationId=inv_8f307e6d-c21e-4fff-992c-9d14bdf9c3ed&page=0_0#
 
 ![Diagrama de Classes - Aplicação "Controle de Cursos"](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e2-proj-int-t1-controle_de_cursos/blob/desenvolvimento/Diagrama%20de%20classes%20-%20Controle%20de%20Cursos_v2.jpeg)
 
 ## Modelo ER (Projeto Conceitual)
 
-O Modelo ER representa através de um diagrama como as entidades se relacionam entre si na aplicação interativa.
+O Modelo ER representa através de um diagrama como as entidades se relacionam entre si na aplicação interativa. Está disponível através do link https://lucid.app/lucidchart/f7a69bd4-1f8e-4091-9aa0-c81f2cd60193/edit?invitationId=inv_d24f5bab-d069-483d-8e41-b0d985b9221d&page=0_0#
 
 ![Modelo ER](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e2-proj-int-t1-controle_de_cursos/blob/desenvolvimento/Diagrama%20ER1.png)
 
