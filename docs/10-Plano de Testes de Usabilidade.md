@@ -8,7 +8,7 @@ Os testes terão como objetivos obter respostas para os seguintes pontos:
 2)	O sistema é responsivo?
 3)	Os usuários alcançam seus objetivos em poucos cliques?
 4)	A navegabilidade é agradável e fluída?
-5)	Fornecedores enviam documentos nos formatos aceitos sem de forma ágil?
+5)	Fornecedores enviam documentos nos formatos aceitos sem erros e de forma ágil?
 
 As dimensões abordadas neste teste de usabilidade serão as seguintes:
 Usuários: 08 usuários com idades variando entre 20 e 60 anos com perfil social variado
@@ -42,5 +42,6 @@ Report:  O facilitador/observador fará todas as anotações pertinentes em rela
 ||6) Efetuar “LOGOUT”|
 |**Critérios de Êxito**|O fornecedor deve considerar o sistema intuitivo e de fácil utilização|
 
-##Confecção e Analise do relatório##
+## Confecção e Analise do relatório ##
+
 O observador irá registrar o tempo para conclusão dos testes, a opinião do usuário em relação ao sistema, sugestões de melhorias e outras observações de utilização que julgar pertinente. A equipe de posse dos relatórios fará a avaliação e ajustes necessários.
