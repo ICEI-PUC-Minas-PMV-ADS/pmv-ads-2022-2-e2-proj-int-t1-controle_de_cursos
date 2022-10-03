@@ -44,7 +44,7 @@ Nesta seção são apresentados os detalhes técnicos da solução criada pela e
 Diagrama de Componentes
 Os componentes que fazem parte da solução são apresentados na Figura abaixo:
  
-![Diagrama de Componentes - Aplicação "Controle de Cursos"](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e2-proj-int-t1-controle_de_cursos/blob/main/Diagrama%20de%20componentes.png) 
+![Diagrama de Componentes - Aplicação "Controle de Cursos"](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e2-proj-int-t1-controle_de_cursos/blob/desenvolvimento/Diagrama%20de%20componentes.png) 
 
 A solução implementada conta com os seguintes módulos:
 •	Navegador – Local da interface básica do sistema, onde será processado todos elementos estruturais das páginas requisitadas na Web, tais como: arquivos (HTML, CSS, JavaScript), imagens e vídeos que implementam as funcionalidades do sistema.
