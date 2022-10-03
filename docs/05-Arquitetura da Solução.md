@@ -39,13 +39,12 @@ Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, 
 
 Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
 
-ARQUITETURA DA SOLUÇÃO
 Nesta seção são apresentados os detalhes técnicos da solução criada pela equipe, tratando dos componentes que fazem parte da solução e do ambiente de hospedagem da solução.
 
 Diagrama de Componentes
 Os componentes que fazem parte da solução são apresentados na Figura abaixo:
  
-![Diagrama de Componentes - Aplicação "Controle de Cursos"]() 
+![Diagrama de Componentes - Aplicação "Controle de Cursos"](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e2-proj-int-t1-controle_de_cursos/blob/main/Diagrama%20de%20componentes.png) 
 
 A solução implementada conta com os seguintes módulos:
 •	Navegador – Local da interface básica do sistema, onde será processado todos elementos estruturais das páginas requisitadas na Web, tais como: arquivos (HTML, CSS, JavaScript), imagens e vídeos que implementam as funcionalidades do sistema.
