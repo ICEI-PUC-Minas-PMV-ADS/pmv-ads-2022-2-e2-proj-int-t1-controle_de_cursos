@@ -9,5 +9,7 @@ namespace Controle.Cursos.Models.Context
         {
 
         }
+
+        public DbSet<Curso> Cursos { get; set; }
     }
 }
