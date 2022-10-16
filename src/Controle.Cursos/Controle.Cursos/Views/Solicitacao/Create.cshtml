@@ -1,0 +1,42 @@
+﻿@model Controle.Cursos.Models.Solicitacao
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Criar</h1>
+
+<h4>Solicitação</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="AlunoId" class="control-label">Aluno</label>
+                <select asp-for="AlunoId" class="form-control" 
+                    asp-items="@(new SelectList(@ViewBag.Alunos, "Id", "Nome"))">
+                 </select>
+                <span asp-validation-for="AlunoId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CursoId" class="control-label">Curso</label>
+                <select asp-for="CursoId" class="form-control" 
+                    asp-items="@(new SelectList(@ViewBag.Cursos, "Id", "Nome"))">
+                 </select>
+                <span asp-validation-for="CursoId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Voltar</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
