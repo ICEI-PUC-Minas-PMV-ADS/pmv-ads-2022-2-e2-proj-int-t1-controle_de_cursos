@@ -15,8 +15,9 @@ namespace Controle.Cursos.Models
         [Required(ErrorMessage = ErrorMessage.NOME_OBRIGATORIO)]
         public string Nome { get; set; }
         public DateTime Horario { get; set; }
-        public Fornecedor Fornecedor { get; set; }
+        public int? FornecedorId { get; set; }
+        public virtual Fornecedor Fornecedor { get; set; }
         public EModalidade Modalidade { get; set; }
-        public IEnumerable<Turma> Turmas { get; set; }
+        public virtual IEnumerable<Turma> Turmas { get; set; }
     }
 }

@@ -1,7 +1,9 @@
 ﻿using Controle.Cursos.Models;
 using Controle.Cursos.Models.Context;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -41,12 +43,19 @@ namespace Controle.Cursos.Controllers
 
         public IActionResult Create()
         {
+            var fornecedores = _context.Fornecedores.ToList();
+
+            if (fornecedores != null)
+            {
+                ViewBag.data = fornecedores;
+            }
+
             return View();
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id, Nome, Horario")] Curso curso)
+        public async Task<IActionResult> Create([Bind("Id, Nome, FornecedorId, Horario")] Curso curso)
         {
             if (ModelState.IsValid)
             {
@@ -72,12 +81,19 @@ namespace Controle.Cursos.Controllers
                 return NotFound();
             }
 
+            var fornecedores = _context.Fornecedores.ToList();
+
+            if (fornecedores != null)
+            {
+                ViewBag.data = fornecedores;
+            }
+
             return View(curso);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Horario")] Curso curso)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,FornecedorId,Horario")] Curso curso)
         {
             if (id != curso.Id)
             {

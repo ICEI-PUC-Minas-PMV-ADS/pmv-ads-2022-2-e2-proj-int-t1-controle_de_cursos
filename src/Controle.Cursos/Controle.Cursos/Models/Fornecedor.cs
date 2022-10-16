@@ -1,4 +1,6 @@
-﻿namespace Controle.Cursos.Models
+﻿using System.Collections.Generic;
+
+namespace Controle.Cursos.Models
 {
     public class Fornecedor
     {
@@ -7,5 +9,6 @@
         public string RazaoSocial { get; set; }
         public string NomeFantasia { get; set; }
         public int? InscricaoEstadual { get; set; }
+        public virtual List<Curso> Cursos { get; set; }
     }
 }

@@ -9,6 +9,6 @@ namespace Controle.Cursos.Models
         public string Nome { get; set; }
         public string Cpf { get; set; }
         public DateTime DataNascimento { get; set; }
-        public IEnumerable<Curso> Cursos { get; set; }
+        public virtual IEnumerable<Curso> Cursos { get; set; }
     }
 }
