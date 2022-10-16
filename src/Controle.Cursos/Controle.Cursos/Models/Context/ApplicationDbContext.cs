@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Controle.Cursos.Models;
 
 namespace Controle.Cursos.Models.Context
 {
@@ -10,6 +11,8 @@ namespace Controle.Cursos.Models.Context
 
         }
 
+
         public DbSet<Curso> Cursos { get; set; }
+        public DbSet<Fornecedor> Fornecedores { get; set; }
     }
 }
