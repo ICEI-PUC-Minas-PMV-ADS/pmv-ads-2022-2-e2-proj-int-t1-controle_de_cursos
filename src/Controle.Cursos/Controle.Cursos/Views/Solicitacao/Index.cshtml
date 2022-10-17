@@ -1,25 +1,25 @@
-﻿@model IEnumerable<Controle.Cursos.Models.Curso>
+﻿@model IEnumerable<Controle.Cursos.Models.Solicitacao>
 
 @{
     ViewData["Title"] = "Index";
 }
 
-<h1>Cursos</h1>
+<h1>Solicitações</h1>
 
 <p>
-    <a asp-action="Create">Criar um novo Curso</a>
+    <a asp-action="Create">Criar uma nova solicitação de Curso</a>
 </p>
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Nome)
+                @Html.DisplayNameFor(model => model.Id)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Horario)
+                @Html.DisplayNameFor(model => model.Aluno)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Fornecedor)
+                @Html.DisplayNameFor(model => model.Curso)
             </th>
             <th></th>
         </tr>
@@ -28,13 +28,13 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Nome)
+                @Html.DisplayFor(modelItem => item.Id)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Horario)
+                @Html.DisplayFor(modelItem => item.Aluno.Nome)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Fornecedor.NomeFantasia)
+                @Html.DisplayFor(modelItem => item.Curso.Nome)
             </td>
             <td> 
                 <a asp-action="Edit" asp-route-id="@item.Id">Editar</a> |

@@ -1,4 +1,4 @@
-﻿@model Controle.Cursos.Models.Curso
+﻿@model Controle.Cursos.Models.Aluno
 
 @{
     ViewData["Title"] = "Create";
@@ -6,7 +6,7 @@
 
 <h1>Cadastrar</h1>
 
-<h4>Curso</h4>
+<h4>Aluno</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -18,16 +18,14 @@
                 <span asp-validation-for="Nome" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Horario" class="control-label"></label>
-                <input asp-for="Horario" class="form-control" />
-                <span asp-validation-for="Horario" class="text-danger"></span>
+                <label asp-for="Cpf" class="control-label"></label>
+                <input asp-for="Cpf" class="form-control" />
+                <span asp-validation-for="Cpf" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="FornecedorId" class="control-label">Fornecedor</label>
-                <select asp-for="FornecedorId" class="form-control" 
-                    asp-items="@(new SelectList(@ViewBag.data, "Id", "RazaoSocial"))">
-                 </select>
-                <span asp-validation-for="FornecedorId" class="text-danger"></span>
+                <label asp-for="DataNascimento" class="control-label"></label>
+                <input asp-for="DataNascimento" class="form-control" />
+                <span asp-validation-for="DataNascimento" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Cadastrar" class="btn btn-primary" />

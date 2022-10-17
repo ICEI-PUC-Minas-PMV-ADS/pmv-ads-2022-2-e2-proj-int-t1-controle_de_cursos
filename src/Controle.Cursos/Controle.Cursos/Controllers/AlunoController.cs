@@ -1,101 +1,87 @@
 ﻿using Controle.Cursos.Models;
 using Controle.Cursos.Models.Context;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace Controle.Cursos.Controllers
 {
-    public class CursoController : Controller
+    public class AlunoController : Controller
     {
         private readonly ApplicationDbContext _context;
-
-        public CursoController(ApplicationDbContext context)
+        public AlunoController(ApplicationDbContext context)
         {
             _context = context;
         }
 
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Cursos.ToListAsync());
+            return View(await _context.Alunos.ToListAsync());
         }
 
-        public async Task<IActionResult> Details(int? id)
+        public async Task<IActionResult> DetailsAsync(int id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            var curso = await _context.Cursos
+            var aluno = await _context.Alunos
                 .FirstOrDefaultAsync(c => c.Id == id);
 
-            if (curso == null)
+            if (aluno == null)
             {
                 return NotFound();
             }
 
-            return View(curso);
+            return View(aluno);
         }
 
-        public IActionResult Create()
+        public ActionResult Create()
         {
-            var fornecedores = _context.Fornecedores.ToList();
-
-            if (fornecedores != null)
-            {
-                ViewBag.data = fornecedores;
-            }
-
             return View();
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id, Nome, FornecedorId, Horario")] Curso curso)
+        public async Task<IActionResult> Create(
+            [Bind("Id, Nome, Cpf, DataNascimento")] Aluno aluno)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(curso);
+                _context.Add(aluno);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
 
-            return View(curso);
+            return View(aluno);
         }
 
-        public async Task<IActionResult> Edit(int? id)
+        public async Task<IActionResult> EditAsync(int id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            var curso = await _context.Cursos.FindAsync(id);
+            var aluno = await _context.Alunos.FindAsync(id);
 
-            if (curso == null)
+            if (aluno == null)
             {
                 return NotFound();
             }
 
-            var fornecedores = _context.Fornecedores.ToList();
-
-            if (fornecedores != null)
-            {
-                ViewBag.data = fornecedores;
-            }
-
-            return View(curso);
+            return View(aluno);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,FornecedorId,Horario")] Curso curso)
+        public async Task<IActionResult> EditAsync(int id, 
+            [Bind("Id, Nome, Cpf, DataNascimento")] Aluno aluno)
         {
-            if (id != curso.Id)
+            if (id != aluno.Id)
             {
                 return NotFound();
             }
@@ -104,12 +90,12 @@ namespace Controle.Cursos.Controllers
             {
                 try
                 {
-                    _context.Update(curso);
+                    _context.Update(aluno);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!CursoExiste(curso.Id))
+                    if (!AlunoExiste(aluno.Id))
                     {
                         return NotFound();
                     }
@@ -122,40 +108,40 @@ namespace Controle.Cursos.Controllers
                 return RedirectToAction(nameof(Index));
             }
 
-            return View(curso);
+            return View(aluno);
         }
 
-        public async Task<IActionResult> Delete(int? id)
+        public async Task<IActionResult> DeleteAsync(int? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            var curso = await _context.Cursos
+            var aluno = await _context.Alunos
                 .FirstOrDefaultAsync(c => c.Id == id);
 
-            if (curso == null)
+            if (aluno == null)
             {
                 return NotFound();
             }
 
-            return View(curso);
+            return View(aluno);
         }
 
-        [HttpPost, ActionName("Delete")]
+        [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public async Task<IActionResult> DeleteAsync(int id, IFormCollection collection)
         {
-            var curso = await _context.Cursos.FindAsync(id);
-            _context.Cursos.Remove(curso);
+            var aluno = await _context.Alunos.FindAsync(id);
+            _context.Alunos.Remove(aluno);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-        
-        private bool CursoExiste(int id)
-        { 
-            return _context.Cursos.Any(e => e.Id == id);
+
+        private bool AlunoExiste(int id)
+        {
+            return _context.Alunos.Any(e => e.Id == id);
         }
     }
 }

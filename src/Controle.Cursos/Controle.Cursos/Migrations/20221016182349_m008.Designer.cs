@@ -4,35 +4,22 @@ using Controle.Cursos.Models.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Controle.Cursos.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20221016182349_m008")]
+    partial class m008
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
                 .UseIdentityColumns()
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("ProductVersion", "5.0.2");
-
-            modelBuilder.Entity("AlunoTurma", b =>
-                {
-                    b.Property<int>("AlunosId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("TurmasId")
-                        .HasColumnType("int");
-
-                    b.HasKey("AlunosId", "TurmasId");
-
-                    b.HasIndex("TurmasId");
-
-                    b.ToTable("AlunoTurma");
-                });
 
             modelBuilder.Entity("Controle.Cursos.Models.Aluno", b =>
                 {
@@ -50,7 +37,12 @@ namespace Controle.Cursos.Migrations
                     b.Property<string>("Nome")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("TurmaId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("TurmaId");
 
                     b.ToTable("Alunos");
                 });
@@ -61,6 +53,9 @@ namespace Controle.Cursos.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .UseIdentityColumn();
+
+                    b.Property<int?>("AlunoId")
+                        .HasColumnType("int");
 
                     b.Property<int?>("FornecedorId")
                         .HasColumnType("int");
@@ -76,6 +71,8 @@ namespace Controle.Cursos.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("AlunoId");
 
                     b.HasIndex("FornecedorId");
 
@@ -106,42 +103,6 @@ namespace Controle.Cursos.Migrations
                     b.ToTable("Fornecedores");
                 });
 
-            modelBuilder.Entity("Controle.Cursos.Models.Solicitacao", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .UseIdentityColumn();
-
-                    b.Property<int>("AlunoId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("CursoId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("DataAbertura")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime?>("DataFechamento")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("Etapa")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("TurmaId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("AlunoId");
-
-                    b.HasIndex("CursoId");
-
-                    b.HasIndex("TurmaId");
-
-                    b.ToTable("Solicitacao");
-                });
-
             modelBuilder.Entity("Controle.Cursos.Models.Turma", b =>
                 {
                     b.Property<int>("Id")
@@ -158,11 +119,14 @@ namespace Controle.Cursos.Migrations
                     b.Property<DateTime>("DataCadastro")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime?>("DataFinalizacao")
+                    b.Property<DateTime>("DataFinalizacao")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime?>("DataInicio")
+                    b.Property<DateTime>("DataInicio")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("Nome")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Periodo")
                         .HasColumnType("nvarchar(max)");
@@ -171,56 +135,27 @@ namespace Controle.Cursos.Migrations
 
                     b.HasIndex("CursoId");
 
-                    b.ToTable("Turmas");
+                    b.ToTable("Turma");
                 });
 
-            modelBuilder.Entity("AlunoTurma", b =>
+            modelBuilder.Entity("Controle.Cursos.Models.Aluno", b =>
                 {
-                    b.HasOne("Controle.Cursos.Models.Aluno", null)
-                        .WithMany()
-                        .HasForeignKey("AlunosId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("Controle.Cursos.Models.Turma", null)
-                        .WithMany()
-                        .HasForeignKey("TurmasId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .WithMany("Alunos")
+                        .HasForeignKey("TurmaId");
                 });
 
             modelBuilder.Entity("Controle.Cursos.Models.Curso", b =>
                 {
+                    b.HasOne("Controle.Cursos.Models.Aluno", null)
+                        .WithMany("Cursos")
+                        .HasForeignKey("AlunoId");
+
                     b.HasOne("Controle.Cursos.Models.Fornecedor", "Fornecedor")
                         .WithMany("Cursos")
                         .HasForeignKey("FornecedorId");
 
                     b.Navigation("Fornecedor");
-                });
-
-            modelBuilder.Entity("Controle.Cursos.Models.Solicitacao", b =>
-                {
-                    b.HasOne("Controle.Cursos.Models.Aluno", "Aluno")
-                        .WithMany("Solicitacoes")
-                        .HasForeignKey("AlunoId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Controle.Cursos.Models.Curso", "Curso")
-                        .WithMany()
-                        .HasForeignKey("CursoId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Controle.Cursos.Models.Turma", "Turma")
-                        .WithMany()
-                        .HasForeignKey("TurmaId");
-
-                    b.Navigation("Aluno");
-
-                    b.Navigation("Curso");
-
-                    b.Navigation("Turma");
                 });
 
             modelBuilder.Entity("Controle.Cursos.Models.Turma", b =>
@@ -236,7 +171,7 @@ namespace Controle.Cursos.Migrations
 
             modelBuilder.Entity("Controle.Cursos.Models.Aluno", b =>
                 {
-                    b.Navigation("Solicitacoes");
+                    b.Navigation("Cursos");
                 });
 
             modelBuilder.Entity("Controle.Cursos.Models.Curso", b =>
@@ -247,6 +182,11 @@ namespace Controle.Cursos.Migrations
             modelBuilder.Entity("Controle.Cursos.Models.Fornecedor", b =>
                 {
                     b.Navigation("Cursos");
+                });
+
+            modelBuilder.Entity("Controle.Cursos.Models.Turma", b =>
+                {
+                    b.Navigation("Alunos");
                 });
 #pragma warning restore 612, 618
         }

@@ -1,4 +1,4 @@
-﻿@model Controle.Cursos.Models.Curso
+﻿@model Controle.Cursos.Models.Aluno
 
 @{
     ViewData["Title"] = "Delete";
@@ -6,9 +6,9 @@
 
 <h1>Deletar</h1>
 
-<h3>Confirma que deseja deletar o Curso?</h3>
+<h3>Tem certeza que deseja deletar o Aluno?</h3>
 <div>
-    <h4>Curso</h4>
+    <h4>Aluno</h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
@@ -18,10 +18,16 @@
             @Html.DisplayFor(model => model.Nome)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Horario)
+            @Html.DisplayNameFor(model => model.Cpf)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Horario)
+            @Html.DisplayFor(model => model.Cpf)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DataNascimento)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DataNascimento)
         </dd>
     </dl>
     

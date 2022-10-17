@@ -1,53 +1,58 @@
 ﻿using Controle.Cursos.Models;
 using Controle.Cursos.Models.Context;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace Controle.Cursos.Controllers
 {
-    public class CursoController : Controller
+    public class SolicitacaoController : Controller
     {
         private readonly ApplicationDbContext _context;
-
-        public CursoController(ApplicationDbContext context)
+        public SolicitacaoController(ApplicationDbContext context)
         {
             _context = context;
         }
 
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Cursos.ToListAsync());
+            return View(await _context.Solicitacoes.ToListAsync());
         }
-
-        public async Task<IActionResult> Details(int? id)
+        
+        public async Task<IActionResult> DetailsAsync(int id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            var curso = await _context.Cursos
+            var solicitacao = await _context.Solicitacoes
                 .FirstOrDefaultAsync(c => c.Id == id);
 
-            if (curso == null)
+            if (solicitacao == null)
             {
                 return NotFound();
             }
 
-            return View(curso);
+            return View(solicitacao);
         }
 
-        public IActionResult Create()
+        public ActionResult Create()
         {
-            var fornecedores = _context.Fornecedores.ToList();
+            var cursos = _context.Cursos.ToList();
 
-            if (fornecedores != null)
+            if (cursos != null)
             {
-                ViewBag.data = fornecedores;
+                ViewBag.Cursos = cursos;
+            }
+
+            var alunos = _context.Alunos.ToList();
+
+            if (alunos != null)
+            {
+                ViewBag.Alunos = alunos;
             }
 
             return View();
@@ -55,47 +60,42 @@ namespace Controle.Cursos.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id, Nome, FornecedorId, Horario")] Curso curso)
+        public async Task<IActionResult> Create(
+            [Bind("Id, AlunoId, CursoId")] Solicitacao solicitacao)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(curso);
+                _context.Add(solicitacao);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
 
-            return View(curso);
+            return View(solicitacao);
         }
 
-        public async Task<IActionResult> Edit(int? id)
+        public async Task<IActionResult> EditAsync(int id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            var curso = await _context.Cursos.FindAsync(id);
+            var solicitacao = await _context.Solicitacoes.FindAsync(id);
 
-            if (curso == null)
+            if (solicitacao == null)
             {
                 return NotFound();
             }
 
-            var fornecedores = _context.Fornecedores.ToList();
-
-            if (fornecedores != null)
-            {
-                ViewBag.data = fornecedores;
-            }
-
-            return View(curso);
+            return View(solicitacao);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,FornecedorId,Horario")] Curso curso)
+        public async Task<IActionResult> EditAsync(int id, 
+            [Bind("Id, AlunoId, CursoId")] Solicitacao solicitacao)
         {
-            if (id != curso.Id)
+            if (id != solicitacao.Id)
             {
                 return NotFound();
             }
@@ -104,12 +104,12 @@ namespace Controle.Cursos.Controllers
             {
                 try
                 {
-                    _context.Update(curso);
+                    _context.Update(solicitacao);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!CursoExiste(curso.Id))
+                    if (!solicitacaoExiste(solicitacao.Id))
                     {
                         return NotFound();
                     }
@@ -122,40 +122,40 @@ namespace Controle.Cursos.Controllers
                 return RedirectToAction(nameof(Index));
             }
 
-            return View(curso);
+            return View(solicitacao);
         }
 
-        public async Task<IActionResult> Delete(int? id)
+        public async Task<IActionResult> DeleteAsync(int? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            var curso = await _context.Cursos
+            var solicitacao = await _context.Solicitacoes
                 .FirstOrDefaultAsync(c => c.Id == id);
 
-            if (curso == null)
+            if (solicitacao == null)
             {
                 return NotFound();
             }
 
-            return View(curso);
+            return View(solicitacao);
         }
 
-        [HttpPost, ActionName("Delete")]
+        [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public async Task<IActionResult> DeleteAsync(int id, IFormCollection collection)
         {
-            var curso = await _context.Cursos.FindAsync(id);
-            _context.Cursos.Remove(curso);
+            var solicitacao = await _context.Solicitacoes.FindAsync(id);
+            _context.Solicitacoes.Remove(solicitacao);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-        
-        private bool CursoExiste(int id)
-        { 
-            return _context.Cursos.Any(e => e.Id == id);
+
+        private bool solicitacaoExiste(int id)
+        {
+            return _context.Solicitacoes.Any(e => e.Id == id);
         }
     }
 }
