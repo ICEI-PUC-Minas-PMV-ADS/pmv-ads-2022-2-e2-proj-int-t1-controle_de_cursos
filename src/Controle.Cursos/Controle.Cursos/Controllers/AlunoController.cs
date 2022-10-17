@@ -47,7 +47,7 @@ namespace Controle.Cursos.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(
-            [Bind("Id, Nome, Cpf, DataNascimento")] Aluno aluno)
+            [Bind("Id, Nome, Sexo, Cpf, DataNascimento")] Aluno aluno)
         {
             if (ModelState.IsValid)
             {
@@ -79,7 +79,7 @@ namespace Controle.Cursos.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> EditAsync(int id, 
-            [Bind("Id, Nome, Cpf, DataNascimento")] Aluno aluno)
+            [Bind("Id, Nome, Sexo, Cpf, DataNascimento")] Aluno aluno)
         {
             if (id != aluno.Id)
             {

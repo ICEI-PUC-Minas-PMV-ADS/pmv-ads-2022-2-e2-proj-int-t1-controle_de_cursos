@@ -48,7 +48,7 @@ namespace Controle.Cursos.Controllers
 
         public ActionResult Create()
         {
-            var cursos = _context.Cursos.ToList();
+            List<Curso> cursos = ObterCursosDeSolicitacoesAbertas();
 
             if (cursos != null)
             {
@@ -59,7 +59,8 @@ namespace Controle.Cursos.Controllers
             {
                 solicitacoes = _context.Solicitacoes
                 .Select(s => s)
-                .Where(s => s.CursoId == cursoIdSelected);
+                .Where(s => s.CursoId == cursoIdSelected
+                && s.Etapa != EEtapaSolicitacao.Concluida);
             }
             else
             {
@@ -74,12 +75,21 @@ namespace Controle.Cursos.Controllers
             return View();
         }
 
+        private List<Curso> ObterCursosDeSolicitacoesAbertas()
+        {
+            var solicitacoesAbertas = _context.Solicitacoes
+                .Where(s => s.Etapa == EEtapaSolicitacao.Aberta)
+                .Select(s => s.Curso.Id).ToList();
+
+            return _context.Cursos.Select(c => c).Where(c => solicitacoesAbertas.Contains(c.Id)).ToList();
+        }
+
         public ActionResult SolicitacaoPartial(
             [Bind("Id")] int cursoId)
         {
             cursoIdSelected = cursoId;
 
-            var cursos = _context.Cursos.ToList();
+            var cursos = ObterCursosDeSolicitacoesAbertas();
 
             if (cursos != null)
             {
@@ -88,7 +98,8 @@ namespace Controle.Cursos.Controllers
 
             solicitacoes = _context.Solicitacoes
                 .Select(s => s)
-                .Where(s => s.CursoId == cursoId);
+                .Where(s => s.CursoId == cursoId
+                && s.Etapa != EEtapaSolicitacao.Concluida);
 
             if (solicitacoes != null)
             {
