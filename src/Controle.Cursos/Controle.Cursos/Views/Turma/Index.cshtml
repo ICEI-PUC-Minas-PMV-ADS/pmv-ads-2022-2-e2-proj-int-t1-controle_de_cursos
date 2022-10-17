@@ -4,7 +4,7 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Turmas</h1>
 
 <p>
     <a asp-action="Create">Criar uma nova Turma</a>
@@ -23,9 +23,6 @@
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Periodo)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Alunos)
             </th>
             <th></th>
         </tr>
@@ -46,10 +43,6 @@
                 @Html.DisplayFor(modelItem => item.Periodo)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Alunos.Count())
-            </td>
-            <td>
-                <a asp-action="Relatorio" asp-route-id="@item.Id">Relatório</a> |
                 <a asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
                 <a asp-action="Details" asp-route-id="@item.Id">Detalhes</a> |
                 <a asp-action="Delete" asp-route-id="@item.Id">Deletar</a>

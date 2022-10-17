@@ -4,7 +4,7 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Criar</h1>
+<h1>Cadastrar</h1>
 
 <h4>Turma</h4>
 <hr />
@@ -19,15 +19,16 @@
                  </select>
                 <span asp-validation-for="CursoId" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
         </form>
         @{
             //Html.RenderPartial("_SolicitacaoPartial");
             Html.RenderPartial("_SolicitacaoPartial", (IEnumerable<Solicitacao>)ViewBag.Solicitacoes);
         }
-
+        <form asp-action="CreateBtn">
+            <div class="form-group">
+                <input type="submit" value="Cadastrar" class="btn btn-primary" />
+            </div>
+        </form>
     </div>
 </div>
 

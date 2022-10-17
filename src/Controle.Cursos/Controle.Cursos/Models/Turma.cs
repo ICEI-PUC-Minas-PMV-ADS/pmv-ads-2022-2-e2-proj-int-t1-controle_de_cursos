@@ -8,11 +8,11 @@ namespace Controle.Cursos.Models
         public int Id { get; set; }
         public int CursoId { get; set; }
         public virtual Curso Curso { get; set; }
-        public virtual IEnumerable<Aluno> Alunos { get; set; }
-        public string Periodo { get; set; }
+        public virtual ICollection<Aluno> Alunos { get; set; }
+        public string? Periodo { get; set; }
         public DateTime DataCadastro { get; set; }
-        public DateTime DataInicio { get; set; }
-        public DateTime DataFinalizacao { get; set; }
+        public DateTime? DataInicio { get; set; }
+        public DateTime? DataFinalizacao { get; set; }
         public bool Concluida { get; set; }
     }
 }

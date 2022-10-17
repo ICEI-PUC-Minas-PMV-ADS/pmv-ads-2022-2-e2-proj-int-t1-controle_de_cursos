@@ -1,8 +1,10 @@
 ﻿using Controle.Cursos.Models;
 using Controle.Cursos.Models.Context;
+using Controle.Cursos.Models.Enum;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -11,6 +13,11 @@ namespace Controle.Cursos.Controllers
     public class TurmaController : Controller
     {
         private readonly ApplicationDbContext _context;
+
+        private static int cursoIdSelected;
+
+        private static IEnumerable<Solicitacao> solicitacoes;
+
         public TurmaController(ApplicationDbContext context)
         {
             _context = context;
@@ -48,7 +55,16 @@ namespace Controle.Cursos.Controllers
                 ViewBag.Cursos = cursos;
             }
 
-            var solicitacoes = _context.Solicitacoes.ToList();
+            if (cursoIdSelected != null)
+            {
+                solicitacoes = _context.Solicitacoes
+                .Select(s => s)
+                .Where(s => s.CursoId == cursoIdSelected);
+            }
+            else
+            {
+                solicitacoes = _context.Solicitacoes.ToList();
+            }
 
             if (solicitacoes != null)
             {
@@ -61,6 +77,8 @@ namespace Controle.Cursos.Controllers
         public ActionResult SolicitacaoPartial(
             [Bind("Id")] int cursoId)
         {
+            cursoIdSelected = cursoId;
+
             var cursos = _context.Cursos.ToList();
 
             if (cursos != null)
@@ -68,10 +86,9 @@ namespace Controle.Cursos.Controllers
                 ViewBag.Cursos = cursos;
             }
 
-            var solicitacoes = _context.Solicitacoes
+            solicitacoes = _context.Solicitacoes
                 .Select(s => s)
-                .Where(s => s.CursoId == cursoId)
-                .AsEnumerable();
+                .Where(s => s.CursoId == cursoId);
 
             if (solicitacoes != null)
             {
@@ -83,17 +100,39 @@ namespace Controle.Cursos.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(
-            [Bind("Id, AlunoId, CursoId")] Turma turma)
+        public async Task<IActionResult> CreateBtn()
         {
             if (ModelState.IsValid)
             {
+                solicitacoes = _context.Solicitacoes
+                .Select(s => s)
+                .Where(s => s.CursoId == cursoIdSelected 
+                && s.Etapa != EEtapaSolicitacao.Concluida);
+
+                foreach (var solicitacao in solicitacoes)
+                {
+                    solicitacao.Etapa = EEtapaSolicitacao.Concluida;
+                }
+
+                var listaAlunosId = solicitacoes.Select(s => s.Aluno).ToList();
+
+                Turma turma = new Turma
+                {
+                    Alunos = _context.Alunos
+                        .Select(a => a)
+                        .Where(a =>  listaAlunosId.Contains(a)).ToList(),
+                    Concluida = false,
+                    CursoId = cursoIdSelected
+                };
+
                 _context.Add(turma);
+                _context.UpdateRange(solicitacoes);
                 await _context.SaveChangesAsync();
+
                 return RedirectToAction(nameof(Index));
             }
 
-            return View(turma);
+            return View("Create");
         }
 
         public async Task<IActionResult> EditAsync(int id)

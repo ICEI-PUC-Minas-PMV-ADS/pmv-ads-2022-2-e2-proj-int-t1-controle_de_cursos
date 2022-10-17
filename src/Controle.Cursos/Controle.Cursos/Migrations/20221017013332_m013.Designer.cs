@@ -4,14 +4,16 @@ using Controle.Cursos.Models.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Controle.Cursos.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20221017013332_m013")]
+    partial class m013
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -62,6 +64,9 @@ namespace Controle.Cursos.Migrations
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
+                    b.Property<int?>("AlunoId")
+                        .HasColumnType("int");
+
                     b.Property<int?>("FornecedorId")
                         .HasColumnType("int");
 
@@ -76,6 +81,8 @@ namespace Controle.Cursos.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("AlunoId");
 
                     b.HasIndex("FornecedorId");
 
@@ -191,6 +198,10 @@ namespace Controle.Cursos.Migrations
 
             modelBuilder.Entity("Controle.Cursos.Models.Curso", b =>
                 {
+                    b.HasOne("Controle.Cursos.Models.Aluno", null)
+                        .WithMany("Cursos")
+                        .HasForeignKey("AlunoId");
+
                     b.HasOne("Controle.Cursos.Models.Fornecedor", "Fornecedor")
                         .WithMany("Cursos")
                         .HasForeignKey("FornecedorId");
@@ -236,6 +247,8 @@ namespace Controle.Cursos.Migrations
 
             modelBuilder.Entity("Controle.Cursos.Models.Aluno", b =>
                 {
+                    b.Navigation("Cursos");
+
                     b.Navigation("Solicitacoes");
                 });
 
