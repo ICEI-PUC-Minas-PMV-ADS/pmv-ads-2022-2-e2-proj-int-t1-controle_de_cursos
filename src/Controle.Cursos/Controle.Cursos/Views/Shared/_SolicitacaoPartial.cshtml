@@ -3,10 +3,13 @@
 <table class="table">
         <tr>
             <th>
+                @Html.DisplayNameFor(model => model.Curso)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.Aluno)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Curso)
+                @Html.DisplayNameFor(model => model.Etapa)
             </th>
             <th></th>
         </tr>
@@ -17,6 +20,9 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Aluno.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Etapa)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
