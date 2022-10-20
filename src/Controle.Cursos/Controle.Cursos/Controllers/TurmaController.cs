@@ -27,7 +27,24 @@ namespace Controle.Cursos.Controllers
         {
             return View(await _context.Turmas.ToListAsync());
         }
-        
+
+        //public async Task<IActionResult> Details(int? id) {
+        //    if (id == null)
+        //    {
+        //        return NotFound();
+        //    }
+
+        //    var turma = await _context.Turmas
+        //        .FirstOrDefaultAsync(c => c.Id == id);
+
+        //    if (turma == null)
+        //    {
+        //        return NotFound();
+        //    }
+
+        //    return View(turma);
+        //}
+
         public async Task<IActionResult> DetailsAsync(int id)
         {
             if (id == null)
