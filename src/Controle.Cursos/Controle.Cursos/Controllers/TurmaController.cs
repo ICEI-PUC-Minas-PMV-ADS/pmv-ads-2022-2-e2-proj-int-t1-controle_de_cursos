@@ -67,13 +67,17 @@ namespace Controle.Cursos.Controllers
         {
             List<Curso> cursos = ObterListaDeCursosComSolicitacoesAbertas();
 
-            if (cursos != null)
+            if (cursos.Any())
             {
                 ViewBag.Cursos = cursos;
+                cursoIdSelected = cursos.FirstOrDefault().Id;
             }
+            //else
+            //{
+            //    ViewBag.Cursos = new List<Curso>();
+            //}
 
-            var solicitacoes = cursoIdSelected != null ? ObterSolicitacoesAbertasPorCurso(cursoIdSelected) :
-                _context.Solicitacoes.AsQueryable();
+            var solicitacoes = ObterSolicitacoesAbertasPorCurso(cursoIdSelected);
 
             if (solicitacoes != null)
             {
@@ -85,11 +89,16 @@ namespace Controle.Cursos.Controllers
 
         private List<Curso> ObterListaDeCursosComSolicitacoesAbertas()
         {
-            var solicitacoesAbertas = _context.Solicitacoes
-                .Where(s => s.Etapa == EEtapaSolicitacao.Aberta)
-                .Select(s => s.Curso.Id).ToList();
+            //var solicitacoesAbertas = _context.Solicitacoes
+            //    .Where(s => s.Etapa == EEtapaSolicitacao.Aberta)
+            //    .Select(s => s.Curso.Id).ToList();
 
-            return _context.Cursos.Select(c => c).Where(c => solicitacoesAbertas.Contains(c.Id)).ToList();
+            var solicitacoesAbertas = _context.Solicitacoes
+                .Select(s => s)
+                .Where(s =>  s.Etapa == EEtapaSolicitacao.Aberta)
+                .Select(s => s.Curso).Distinct().ToList();
+            return solicitacoesAbertas;
+            // return _context.Cursos.Select(c => c).Where(c => solicitacoesAbertas.Contains(c.Id)).ToList();
         }
 
         public ActionResult SolicitacaoPartial(

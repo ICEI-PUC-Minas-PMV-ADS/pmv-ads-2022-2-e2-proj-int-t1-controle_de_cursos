@@ -145,6 +145,33 @@ namespace Controle.Cursos.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        public async Task<IActionResult> CancelarAsync(int id, IFormCollection collection) {
+            var solicitacao = await _context.Solicitacoes.FindAsync(id);
+
+            solicitacao.Etapa = Models.Enum.EEtapaSolicitacao.Cancelada;
+
+            try
+            {
+                _context.Update(solicitacao);
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!solicitacaoExiste(solicitacao.Id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+
+            return RedirectToAction(nameof(Index));
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteAsync(int id, IFormCollection collection)
         {
             var solicitacao = await _context.Solicitacoes.FindAsync(id);

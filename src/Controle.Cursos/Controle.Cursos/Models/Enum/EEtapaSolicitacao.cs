@@ -5,6 +5,7 @@
         Aberta,
         Rejeitada,
         Aceita,
-        Concluida
+        Concluida,
+        Cancelada
     }
 }
