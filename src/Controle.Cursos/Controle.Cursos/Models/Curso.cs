@@ -19,5 +19,6 @@ namespace Controle.Cursos.Models
         public virtual Fornecedor Fornecedor { get; set; }
         public EModalidade Modalidade { get; set; }
         public virtual IEnumerable<Turma> Turmas { get; set; }
+        public string Descricao { get; set; }
     }
 }

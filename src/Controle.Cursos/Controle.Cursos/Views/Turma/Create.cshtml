@@ -14,21 +14,31 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="CursoId" class="control-label">Curso</label>
-                <select asp-for="CursoId" onchange="this.form.submit()" class="form-control" 
-                    asp-items="@(new SelectList(@ViewBag.Cursos, "Id", "Nome"))">
-                 </select>
-                <span asp-validation-for="CursoId" class="text-danger"></span>
+                @if (ViewBag.Cursos != null && ((List<Curso>)ViewBag.Cursos).Any())
+                {
+                    <select asp-for="CursoId" onchange="this.form.submit()" class="form-control" 
+                        asp-items="@(new SelectList(@ViewBag.Cursos, "Id", "Nome", ((List<Curso>)ViewBag.Cursos).FirstOrDefault()))">
+                     </select>
+                    <span asp-validation-for="CursoId" class="text-danger"></span>
+                } 
+                else
+                {
+                    <p>Nenhuma solicitação de curso foi encontrada.</p>
+                }
             </div>
         </form>
-        @{
-            //Html.RenderPartial("_SolicitacaoPartial");
+        @if (ViewBag.Cursos != null && ((List<Curso>)ViewBag.Cursos).Any())
+        {
+            <partial name="_SolicitacaoPartial" model="(IEnumerable<Solicitacao>)ViewBag.Solicitacoes" />
+            @*@{
             Html.RenderPartial("_SolicitacaoPartial", (IEnumerable<Solicitacao>)ViewBag.Solicitacoes);
-        }
-        <form asp-action="CreateBtn">
-            <div class="form-group">
+        }*@
+            <form asp-action="CreateBtn">
+                <div class="form-group">
                 <input type="submit" value="Cadastrar" class="btn btn-primary" />
             </div>
         </form>
+        }
     </div>
 </div>
 

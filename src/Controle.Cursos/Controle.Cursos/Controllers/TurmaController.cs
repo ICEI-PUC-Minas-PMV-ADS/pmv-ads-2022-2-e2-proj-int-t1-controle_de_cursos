@@ -16,7 +16,7 @@ namespace Controle.Cursos.Controllers
 
         private static int cursoIdSelected;
 
-        private static IEnumerable<Solicitacao> solicitacoes;
+        //private static IEnumerable<Solicitacao> solicitacoes;
 
         public TurmaController(ApplicationDbContext context)
         {
@@ -27,7 +27,24 @@ namespace Controle.Cursos.Controllers
         {
             return View(await _context.Turmas.ToListAsync());
         }
-        
+
+        //public async Task<IActionResult> Details(int? id) {
+        //    if (id == null)
+        //    {
+        //        return NotFound();
+        //    }
+
+        //    var turma = await _context.Turmas
+        //        .FirstOrDefaultAsync(c => c.Id == id);
+
+        //    if (turma == null)
+        //    {
+        //        return NotFound();
+        //    }
+
+        //    return View(turma);
+        //}
+
         public async Task<IActionResult> DetailsAsync(int id)
         {
             if (id == null)
@@ -48,23 +65,15 @@ namespace Controle.Cursos.Controllers
 
         public ActionResult Create()
         {
-            var cursos = _context.Cursos.ToList();
+            List<Curso> cursos = ObterListaDeCursosComSolicitacoesAbertas();
 
-            if (cursos != null)
+            if (cursos.Any())
             {
                 ViewBag.Cursos = cursos;
+                cursoIdSelected = cursos.FirstOrDefault().Id;
             }
 
-            if (cursoIdSelected != null)
-            {
-                solicitacoes = _context.Solicitacoes
-                .Select(s => s)
-                .Where(s => s.CursoId == cursoIdSelected);
-            }
-            else
-            {
-                solicitacoes = _context.Solicitacoes.ToList();
-            }
+            var solicitacoes = ObterSolicitacoesAbertasPorCurso(cursoIdSelected);
 
             if (solicitacoes != null)
             {
@@ -74,21 +83,28 @@ namespace Controle.Cursos.Controllers
             return View();
         }
 
+        private List<Curso> ObterListaDeCursosComSolicitacoesAbertas()
+        {
+            var solicitacoesAbertas = _context.Solicitacoes
+                .Select(s => s)
+                .Where(s =>  s.Etapa == EEtapaSolicitacao.Aberta)
+                .Select(s => s.Curso).Distinct().ToList();
+            return solicitacoesAbertas;
+        }
+
         public ActionResult SolicitacaoPartial(
             [Bind("Id")] int cursoId)
         {
             cursoIdSelected = cursoId;
 
-            var cursos = _context.Cursos.ToList();
+            var cursos = ObterListaDeCursosComSolicitacoesAbertas();
 
             if (cursos != null)
             {
                 ViewBag.Cursos = cursos;
             }
-
-            solicitacoes = _context.Solicitacoes
-                .Select(s => s)
-                .Where(s => s.CursoId == cursoId);
+            
+            var solicitacoes = ObterSolicitacoesAbertasPorCurso(cursoId);
 
             if (solicitacoes != null)
             {
@@ -98,16 +114,21 @@ namespace Controle.Cursos.Controllers
             return View("Create");
         }
 
+        private IQueryable<Solicitacao> ObterSolicitacoesAbertasPorCurso(int cursoId)
+        {
+            return _context.Solicitacoes
+                .Select(s => s)
+                .Where(s => s.CursoId == cursoId
+                && s.Etapa != EEtapaSolicitacao.Concluida);
+        }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> CreateBtn()
         {
             if (ModelState.IsValid)
             {
-                solicitacoes = _context.Solicitacoes
-                .Select(s => s)
-                .Where(s => s.CursoId == cursoIdSelected 
-                && s.Etapa != EEtapaSolicitacao.Concluida);
+                var solicitacoes = ObterSolicitacoesAbertasPorCurso(cursoIdSelected);
 
                 foreach (var solicitacao in solicitacoes)
                 {

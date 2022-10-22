@@ -1,4 +1,4 @@
-﻿@model Controle.Cursos.Models.Curso
+﻿@model Controle.Cursos.Models.Turma
 
 @{
     ViewData["Title"] = "Details";
@@ -11,26 +11,61 @@
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Nome)
+            @Html.DisplayNameFor(model => model.CursoId)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Nome)
+            @Html.DisplayFor(model => model.CursoId)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Horario)
+            @Html.DisplayNameFor(model => model.Curso)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Horario)
+            @Html.DisplayFor(model => model.Curso.Nome)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Fornecedor)
+            @Html.DisplayNameFor(model => model.Alunos)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.FornecedorId)
+            <table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayName("Id")
+            </th>
+            <th>
+                @Html.DisplayName("Nome")
+            </th>
+            <th>
+                @Html.DisplayName("Cpf")
+            </th>
+            <th>
+                @Html.DisplayName("Sexo")
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Alunos) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cpf)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sexo)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
         </dd>
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model.Id">Editar</a> |
     <a asp-action="Index">Voltar</a>
 </div>
