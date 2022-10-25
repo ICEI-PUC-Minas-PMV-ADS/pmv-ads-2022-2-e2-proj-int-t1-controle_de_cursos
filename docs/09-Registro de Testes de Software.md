@@ -28,7 +28,7 @@ Considerando os requisitos do projeto e os casos listados no item [08. Plano de 
 | **Caso de Teste** 	| **CT-04 – Ver detalhes do curso desejado**	|
 |Requisito Associado | RF-03	- A aplicação deve possuir a grade de programação de cursos contendo todos as informações específicas de cada curso. |
 | Objetivo do Teste 	| Verificar se o usuário consegue acessar o detalhamento dos cursos. |
-|Critério de Êxito | - Foi possivel visualizar os detalhes do curso |
+|Critério de Êxito | - Foi possível visualizar os detalhes do curso |
 | Print do Teste | 
 |Conclusão do teste | 
 |  	|  	|
