@@ -4,7 +4,7 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 | **Caso de Teste** 	| **CT-01 – Acesso a pagina "Home e cadastro"** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-01 - Deve possuir tela "Home" e fornecer acesso a página de cadastro de servidores efetivos e comissionados (alunos) e também login para alunos já cadastrados. |
-| Objetivo do Teste 	| Acessar a pagina "Home" e utilizar suas as funcionalidades |
+| Objetivo do Teste 	| Acessar a pagina "Home" e utilizar suas funcionalidades |
 | Passos 	| - Acessar o sistema <br> - Clicar em fazer cadastro (opção para servidores efetivos e alunos) <br> - Preencher os campos obrigatórios <br> - Clicar em "Registrar" |
 |Critério de Êxito | - O cadastro foi realizado com sucesso. |
 |  	|  	|
@@ -42,5 +42,5 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 |Requisito Associado | RF-08	- Fornecer página com histórico das solicitações ja realizadas pelo aluno, sejam elas em andamento ou encerradas. |
 | Objetivo do Teste 	| Verificar se o fornecedor de cursos é capaz de cadastrar uma opção de curso. |
 | Passos 	| - Acessar o sistema <br> - Efetuar o login como aluno <br> - Clicar na opção de historico <br> - Verificar os cursos em andamento ou encerrados <br> - Voltar a pagina inicial |
-|Critério de Êxito | - Verificação de historico feita com sucesso. |
+|Critério de Êxito | - Verificação de histórico feita com sucesso. |
 |  	|  	|
