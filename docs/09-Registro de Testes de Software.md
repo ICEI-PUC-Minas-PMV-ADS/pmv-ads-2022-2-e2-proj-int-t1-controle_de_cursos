@@ -6,7 +6,7 @@ Considerando os requisitos do projeto e os casos listados no item [08. Plano de 
 | **Caso de Teste** 	| **CT-01 – Acesso a página "Home e cadastro"** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-01 - Deve possuir tela "Home" e fornecer acesso a página de cadastro de servidores efetivos e comissionados (alunos) e também login para alunos já cadastrados. |
-| Objetivo do Teste 	| Acessar a pagina "Home" e utilizar suas funcionalidades |
+| Objetivo do Teste 	| Acessar a página "Home" e utilizar suas funcionalidades |
 |Critério de Êxito | - O cadastro foi realizado com sucesso. |
 | Print do Teste | 
 |Conclusão do teste | 
