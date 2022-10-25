@@ -16,7 +16,7 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 |  	|  	|
 | **Caso de Teste** 	| **CT-03 – Visualizar opções cursos**	|
 |Requisito Associado | RF-02	- Deve possibilitar o cadastro de alunos para o acesso a página home logada permitindo a visualização das ofertas de cursos disponíveis. |
-| Objetivo do Teste 	| Verificar se o usuário consegue visualizar as opções de cursos disponiveis. |
+| Objetivo do Teste 	| Verificar se o usuário consegue visualizar as opções de cursos disponíveis. |
 | Passos 	| - Fazer o login <br> - Clicar em cursos disponiveis |
 |Critério de Êxito | - Visualizar as opções de cursos disponiveis. |
 |  	|  	|
