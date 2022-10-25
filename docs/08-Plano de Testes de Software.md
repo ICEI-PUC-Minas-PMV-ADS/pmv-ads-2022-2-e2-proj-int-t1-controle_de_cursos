@@ -28,7 +28,7 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 |  	|  	|
 | **Caso de Teste** 	| **CT-05 – Filtrar a pesquisa de cursos de acordo com a opção desejada**	|
 |Requisito Associado | RF-04	- Deve disponibilizar ao usuário as opções de escolha conforme categoria: cursos externos (parceria com instituições de ensino e contratados por meio de licitação) e cursos internos (desenvolvidos pelos próprios servidores municipais da Administração Direta (Secretarias Municipais e/ou Órgãos) ou pelos servidores das Entidades da Administração Indireta (Autarquias e/ou Fundações). |
-| Objetivo do Teste 	| Verificar se o usuario consegue filtrar as opções de curso. |
+| Objetivo do Teste 	| Verificar se o usuário consegue filtrar as opções de curso. |
 | Passos 	| - Fazer o login <br> - Clicar em cursos disponiveis <br> - Selecionar o filtro de acordo com a opção de curso desejada <br> - Clicar em filtrar <br> - Verificar se o sistema retornou a opção desejada. |
 |Critério de Êxito | - A pesquisa foi filtrada de acordo com a opção do usuário. |
 |  	|  	|
