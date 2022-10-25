@@ -38,7 +38,7 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 | Passos 	| - Acessar o sistema <br> - Efetuar o login como fornecedor de cursos <br> - Clicar na opção de cadastrar curso <br> - Preencher os campos necessários <br> - Clicar em "Cadastrar curso" |
 |Critério de Êxito | - O cadastro do curso foi efetuado com sucesso. |
 |  	|  	|
-| **Caso de Teste** 	| **CT-07 – Acessar historico de solicitações de cursos**	|
+| **Caso de Teste** 	| **CT-07 – Acessar histórico de solicitações de cursos**	|
 |Requisito Associado | RF-08	- Fornecer página com histórico das solicitações ja realizadas pelo aluno, sejam elas em andamento ou encerradas. |
 | Objetivo do Teste 	| Verificar se o fornecedor de cursos é capaz de cadastrar uma opção de curso. |
 | Passos 	| - Acessar o sistema <br> - Efetuar o login como aluno <br> - Clicar na opção de histórico <br> - Verificar os cursos em andamento ou encerrados <br> - Voltar a pagina inicial |
