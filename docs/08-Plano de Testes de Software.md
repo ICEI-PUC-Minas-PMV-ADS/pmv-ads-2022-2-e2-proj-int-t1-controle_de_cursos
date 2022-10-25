@@ -4,7 +4,7 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 | **Caso de Teste** 	| **CT-01 – Acesso a página "Home e cadastro"** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-01 - Deve possuir tela "Home" e fornecer acesso a página de cadastro de servidores efetivos e comissionados (alunos) e também login para alunos já cadastrados. |
-| Objetivo do Teste 	| Acessar a pagina "Home" e utilizar suas funcionalidades |
+| Objetivo do Teste 	| Acessar a página "Home" e utilizar suas funcionalidades |
 | Passos 	| - Acessar o sistema <br> - Clicar em fazer cadastro (opção para servidores efetivos e alunos) <br> - Preencher os campos obrigatórios <br> - Clicar em "Registrar" |
 |Critério de Êxito | - O cadastro foi realizado com sucesso. |
 |  	|  	|
