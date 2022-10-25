@@ -3,7 +3,7 @@
 Considerando os requisitos do projeto e os casos listados no item [08. Plano de Testes de Software](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e2-proj-int-t1-controle_de_cursos/blob/main/docs/08-Plano%20de%20Testes%20de%20Software.md), foram realizados os testes descritos abaixo:
 
 
-| **Caso de Teste** 	| **CT-01 – Acesso a pagina "Home e cadastro"** 	|
+| **Caso de Teste** 	| **CT-01 – Acesso a página "Home e cadastro"** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-01 - Deve possuir tela "Home" e fornecer acesso a página de cadastro de servidores efetivos e comissionados (alunos) e também login para alunos já cadastrados. |
 | Objetivo do Teste 	| Acessar a pagina "Home" e utilizar suas funcionalidades |
