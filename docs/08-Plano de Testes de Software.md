@@ -24,7 +24,7 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 |Requisito Associado | RF-03	- A aplicação deve possuir a grade de programação de cursos contendo todos as informações específicas de cada curso. |
 | Objetivo do Teste 	| Verificar se o usuário consegue acessar o detalhamento dos cursos. |
 | Passos 	| - Fazer o login <br> - Clicar em cursos disponiveis <br> - Selecionar o curso desejado <br> - Verificar os detalhes referente ao curso <br> - Voltar a pagina de cursos |
-|Critério de Êxito | - Foi possivel visualizar os detalhes do curso |
+|Critério de Êxito | - Foi possível visualizar os detalhes do curso |
 |  	|  	|
 | **Caso de Teste** 	| **CT-05 – Filtrar a pesquisa de cursos de acordo com a opção desejada**	|
 |Requisito Associado | RF-04	- Deve disponibilizar ao usuário as opções de escolha conforme categoria: cursos externos (parceria com instituições de ensino e contratados por meio de licitação) e cursos internos (desenvolvidos pelos próprios servidores municipais da Administração Direta (Secretarias Municipais e/ou Órgãos) ou pelos servidores das Entidades da Administração Indireta (Autarquias e/ou Fundações). |
