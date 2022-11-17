@@ -17,5 +17,7 @@ namespace Controle.Cursos.Models.Context
         public DbSet<Aluno> Alunos { get; set; }
         public DbSet<Solicitacao> Solicitacoes { get; set; }
         public DbSet<Turma> Turmas { get; set; }
+
+
     }
 }

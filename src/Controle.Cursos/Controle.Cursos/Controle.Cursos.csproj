@@ -6,6 +6,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Views\InfCurso\**" />
+    <Content Remove="Views\InfCurso\**" />
+    <EmbeddedResource Remove="Views\InfCurso\**" />
+    <None Remove="Views\InfCurso\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\InfCursosController.cs" />
+    <Compile Remove="Models\Enum\EFornecedor.cs" />
+    <Compile Remove="Models\InfCursos.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="5.0.11" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="5.0.2" />

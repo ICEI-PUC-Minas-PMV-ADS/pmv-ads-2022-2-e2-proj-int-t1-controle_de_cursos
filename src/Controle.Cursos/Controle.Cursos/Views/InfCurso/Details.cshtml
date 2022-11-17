@@ -1,0 +1,31 @@
+﻿@model Controle.Cursos.Models.InfCursos
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Detalhes do curso</h1>
+
+<div>
+    <h4>Aluno</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CargaHoraria)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CargaHoraria)
+        </dd>
+
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Editar</a> |
+    <a asp-action="Index">Voltar</a>
+</div>

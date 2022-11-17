@@ -1,0 +1,34 @@
+﻿@model Controle.Cursos.Models.InfCurso
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Deletar informações do curso</h1>
+
+<h3>Tem certeza que deseja deletar as informações do curso?</h3>
+<div>
+    <h4>Aluno</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CargaHoraria)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CargaHoraria)
+        </dd>
+
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Deletar" class="btn btn-danger" /> |
+        <a asp-action="Index">Voltar</a>
+    </form>
+</div>
