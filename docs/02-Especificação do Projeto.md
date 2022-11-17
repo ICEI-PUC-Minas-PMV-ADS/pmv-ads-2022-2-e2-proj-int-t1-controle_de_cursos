@@ -75,7 +75,7 @@ A tabela a seguir apresenta os requisitos do projeto, identificando a prioridade
 |------|----------------------|------------|
 |RF-01|	Deve possuir tela "Home" e fornecer acesso a página de cadastro de servidores efetivos e comissionados (alunos) e também login para alunos já cadastrados.|ALTA|
 |RF-02|	Deve possibilitar o cadastro de alunos  para o acesso a página home logada permitindo a visualização das ofertas de cursos disponíveis.|MÉDIA|
-|RF-03|	A aplicação deve possuir a grade de programação de cursos contendo todos as informações específicas de cada curso.|ALTA|
+|RF-03|	A aplicação deve possuir a grade de programação de cursos contendo informações específicas de cada curso.|ALTA|
 |RF-04|Deve disponibilizar ao usuário as opções de escolha conforme categoria: cursos externos (parceria com instituições de ensino e contratados por meio de licitação) e cursos internos (desenvolvidos pelos próprios servidores municipais da Administração Direta (Secretarias Municipais e/ou Órgãos) ou pelos servidores das Entidades da Administração Indireta (Autarquias e/ou Fundações).|MÉDIA|
 |RF-05|	Deve disponibilizar cadastro específico para o fornecedor de curso externo inserir os dados da empresa e a documentação necessária para o cadastramento das propostas de cursos, arquivos necessários à contratação, verificação documental e validação das informações cadastrais.|ALTA|
 |RF-06| Sistema de marcação, para que o aluno salve como favorita a opção de cursos desejados e sugeridos, para que se possa estimar a demanda latente e a real necessidade na ótica do aluno.|BAIXA|
