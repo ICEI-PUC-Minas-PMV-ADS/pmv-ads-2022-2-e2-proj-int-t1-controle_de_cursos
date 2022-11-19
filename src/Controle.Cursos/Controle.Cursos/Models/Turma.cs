@@ -9,7 +9,8 @@ namespace Controle.Cursos.Models
         public int CursoId { get; set; }
         public virtual Curso Curso { get; set; }
         public virtual ICollection<Aluno> Alunos { get; set; }
-        public string? Periodo { get; set; }
+        //public string? Periodo { get; set; }
+        public string Periodo { get; set; }
         public DateTime DataCadastro { get; set; }
         public DateTime? DataInicio { get; set; }
         public DateTime? DataFinalizacao { get; set; }

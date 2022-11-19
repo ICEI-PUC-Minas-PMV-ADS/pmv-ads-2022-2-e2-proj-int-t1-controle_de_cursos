@@ -10,8 +10,8 @@ namespace Controle.Cursos.Controllers
 {
     public class FornecedorController : Controller
     {
-        private readonly ApplicationDbContext _context;
-        public FornecedorController(ApplicationDbContext context)
+        private readonly Models.ApplicationDbContext _context;
+        public FornecedorController(Models.ApplicationDbContext context)
         {
             _context = context;
         }

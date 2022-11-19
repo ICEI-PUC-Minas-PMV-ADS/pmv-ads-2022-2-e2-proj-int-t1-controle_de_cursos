@@ -1,9 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.2.32616.157
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33027.164
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controle.Cursos", "Controle.Cursos\Controle.Cursos.csproj", "{CBF64D5B-43F1-41DC-BC0C-FFD565FDA642}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Controle.Cursos", "Controle.Cursos\Controle.Cursos.csproj", "{CBF64D5B-43F1-41DC-BC0C-FFD565FDA642}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8E6A0767-03C7-473C-8B31-64F15E641A46}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,4 +1,4 @@
-using Controle.Cursos.Models.Context;
+using Controle.Cursos.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;

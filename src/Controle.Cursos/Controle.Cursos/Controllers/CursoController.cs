@@ -11,9 +11,9 @@ namespace Controle.Cursos.Controllers
 {
     public class CursoController : Controller
     {
-        private readonly ApplicationDbContext _context;
+        private readonly Models.ApplicationDbContext _context;
 
-        public CursoController(ApplicationDbContext context)
+        public CursoController(Models.ApplicationDbContext context)
         {
             _context = context;
         }

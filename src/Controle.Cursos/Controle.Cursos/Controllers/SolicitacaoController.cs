@@ -10,8 +10,8 @@ namespace Controle.Cursos.Controllers
 {
     public class SolicitacaoController : Controller
     {
-        private readonly ApplicationDbContext _context;
-        public SolicitacaoController(ApplicationDbContext context)
+        private readonly Models.ApplicationDbContext _context;
+        public SolicitacaoController(Models.ApplicationDbContext context)
         {
             _context = context;
         }
@@ -109,7 +109,7 @@ namespace Controle.Cursos.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!solicitacaoExiste(solicitacao.Id))
+                    if (SolicitacaoExiste(solicitacao.Id))
                     {
                         return NotFound();
                     }
@@ -157,7 +157,7 @@ namespace Controle.Cursos.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!solicitacaoExiste(solicitacao.Id))
+                if (!SolicitacaoExiste(solicitacao.Id))
                 {
                     return NotFound();
                 }
@@ -180,7 +180,8 @@ namespace Controle.Cursos.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        private bool solicitacaoExiste(int id)
+        //private bool solicitacaoExiste(int id)
+        private bool SolicitacaoExiste(int id)
         {
             return _context.Solicitacoes.Any(e => e.Id == id);
         }

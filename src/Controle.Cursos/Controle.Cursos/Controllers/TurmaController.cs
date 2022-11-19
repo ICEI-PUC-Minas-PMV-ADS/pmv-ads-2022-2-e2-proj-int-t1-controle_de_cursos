@@ -12,13 +12,13 @@ namespace Controle.Cursos.Controllers
 {
     public class TurmaController : Controller
     {
-        private readonly ApplicationDbContext _context;
+        private readonly Models.ApplicationDbContext _context;
 
         private static int cursoIdSelected;
 
         //private static IEnumerable<Solicitacao> solicitacoes;
 
-        public TurmaController(ApplicationDbContext context)
+        public TurmaController(Models.ApplicationDbContext context)
         {
             _context = context;
         }

@@ -10,8 +10,8 @@ namespace Controle.Cursos.Controllers
 {
     public class AlunoController : Controller
     {
-        private readonly ApplicationDbContext _context;
-        public AlunoController(ApplicationDbContext context)
+        private readonly Models.ApplicationDbContext _context;
+        public AlunoController(Models.ApplicationDbContext context)
         {
             _context = context;
         }
