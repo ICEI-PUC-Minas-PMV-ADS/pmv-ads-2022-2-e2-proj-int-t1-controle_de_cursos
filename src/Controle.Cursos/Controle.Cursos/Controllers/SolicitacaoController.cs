@@ -10,6 +10,8 @@ namespace Controle.Cursos.Controllers
 {
     public class SolicitacaoController : Controller
     {
+        private int AlunoId = 1;
+
         private readonly ApplicationDbContext _context;
         public SolicitacaoController(ApplicationDbContext context)
         {
@@ -18,7 +20,9 @@ namespace Controle.Cursos.Controllers
 
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Solicitacoes.ToListAsync());
+            return View(await _context.Solicitacoes
+                .Select(solicitacao => solicitacao)
+                .Where(solicitacao => solicitacao.AlunoId == AlunoId).ToListAsync());
         }
         
         public async Task<IActionResult> DetailsAsync(int id)
