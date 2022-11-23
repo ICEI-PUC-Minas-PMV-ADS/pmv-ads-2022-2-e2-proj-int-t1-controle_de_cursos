@@ -26,11 +26,11 @@ namespace Controle.Cursos.Migrations
                 nullable: false,
                 defaultValue: 0);
 
-            migrationBuilder.AddColumn<int>(
-             name: "Tipo",
-             table: "Curso",
-             type: "int",
-             nullable: true);
+            migrationBuilder.AddColumn<string>(
+                name: "Tipo",
+                table: "Curso",
+                type: "nvarchar(50)",
+                nullable: true);
 
             migrationBuilder.CreateTable(
                 name: "Fornecedor",
