@@ -20,5 +20,6 @@ namespace Controle.Cursos.Models
         public EModalidade Modalidade { get; set; }
         public virtual IEnumerable<Turma> Turmas { get; set; }
         public string Descricao { get; set; }
+        public string Tipo { get; set; }
     }
 }
