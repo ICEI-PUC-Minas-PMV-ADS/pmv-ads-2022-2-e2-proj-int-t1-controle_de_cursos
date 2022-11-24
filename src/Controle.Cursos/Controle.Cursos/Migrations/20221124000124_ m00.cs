@@ -2,10 +2,16 @@
 
 namespace Controle.Cursos.Migrations
 {
-    public partial class m016 : Migration
+    public partial class m00 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.AddColumn<string>(
+                name: "Tipo",
+                table: "Curso",
+                type: "nvarchar(max)",
+                nullable: true);
+
             migrationBuilder.AddColumn<int>(
                 name: "Sexo",
                 table: "Alunos",
@@ -16,6 +22,10 @@ namespace Controle.Cursos.Migrations
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropColumn(
+                name: "Tipo",
+                table: "Curso");
+
             migrationBuilder.DropColumn(
                 name: "Sexo",
                 table: "Alunos");

@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Controle.Cursos.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20221017043319_m016")]
-    partial class m016
+    [Migration("20221124000124_ m00")]
+    partial class m00
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -81,6 +81,9 @@ namespace Controle.Cursos.Migrations
 
                     b.Property<string>("Nome")
                         .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Tipo")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
