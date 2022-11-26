@@ -25,6 +25,8 @@ namespace Controle.Cursos.Models
 
         [DisplayName("Descrição")]
         public string Descricao { get; set; }
+
+        [DisplayName("Tipo")]
         public string Tipo { get; set; }
     }
 }

@@ -36,6 +36,13 @@
                 <span asp-validation-for="FornecedorId" class="text-danger"></span>
             </div>
             <div class="form-group">
+                <label asp-for="Tipo" class="control-label">Curso Interno</label><br>
+                <input asp-for="Tipo" class="form-control" type="radio" id="interno" value="Interno">
+                <label asp-for="Tipo" class="control-label">Curso Externo</label><br>
+                <input asp-for="Tipo" class="form-control" type="radio" id="externo" value="Externo">
+                <span asp-validation-for="Tipo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
                 <input type="submit" value="Salvar" class="btn btn-primary" />
             </div>
         </form>
