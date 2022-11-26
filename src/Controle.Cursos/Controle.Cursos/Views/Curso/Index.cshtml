@@ -9,12 +9,8 @@
 <p>
     <a asp-action="Create">Criar um novo Curso</a>
 </p>
-<div class="searchInput">
-    <input type="text" name="search" id="search" class="form-control">
-    <input type="submit" value="Buscar" class="submit-btn">
 
-</div>
-<table class="table">
+<table class="table" id="tabelaCurso">
     <thead>
         <tr>
             <th>
@@ -31,6 +27,9 @@
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Fornecedor)
+            </th>
+            <th>
+
             </th>
         </tr>
     </thead>
@@ -51,6 +50,7 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Fornecedor.NomeFantasia)
+
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Editar</a> |

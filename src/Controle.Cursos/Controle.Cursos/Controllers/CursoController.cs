@@ -55,7 +55,6 @@ namespace Controle.Cursos.Controllers
             return View();
         }
 
-
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id, Nome, FornecedorId, Horario, Descricao, Tipo")] Curso curso)

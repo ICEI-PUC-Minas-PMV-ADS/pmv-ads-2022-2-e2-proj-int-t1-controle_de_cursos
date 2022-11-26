@@ -27,6 +27,7 @@ namespace Controle.Cursos.Models
         public string Descricao { get; set; }
 
         [DisplayName("Tipo")]
+        [Required(ErrorMessage = ErrorMessage.Tipo_OBRIGATORIO)]
         public string Tipo { get; set; }
     }
 }
