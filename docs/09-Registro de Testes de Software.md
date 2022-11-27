@@ -33,7 +33,7 @@ Considerando os requisitos do projeto e os casos listados no item [08. Plano de 
 | Objetivo do Teste 	| Verificar se o usuário consegue acessar o detalhamento dos cursos. |
 | Passos 	| - Fazer o login <br> - Clicar em Cursos <br> - Selecionar o curso desejado <br> - Verificar os detalhes referente ao curso <br> - Voltar a pagina de cursos |
 |Critério de Êxito | - Foi possível visualizar os detalhes do curso |
-| Print do Teste | ![Detalhes Cursos](img/RF4.jpg)
+| Print do Teste | ![Opções Cursos](img/RF3.jpg)![Detalhes Cursos](img/RF4.jpg)
 |Conclusão do teste | Teste realizado com sucesso. Foi possível visualizar os detalhes do curso
 |  	|  	|
 | **Caso de Teste** 	| **CT-05 – Filtrar a pesquisa de cursos de acordo com a opção desejada**	|
