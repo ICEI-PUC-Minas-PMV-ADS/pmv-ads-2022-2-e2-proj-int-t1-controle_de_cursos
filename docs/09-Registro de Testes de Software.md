@@ -7,7 +7,7 @@ Considerando os requisitos do projeto e os casos listados no item [08. Plano de 
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-01 - Deve possuir tela "Home" e fornecer acesso a página de cadastro de servidores efetivos e comissionados (alunos) e também login para alunos já cadastrados. |
 | Objetivo do Teste 	| Acessar a página "Home" e utilizar suas funcionalidades |
-| Passos 	| - Acessar o sistema <br> - Clicar em Alunos <br> - Preencher os campos obrigatórios <br> - Clicar em "Cadastrar" |
+| Passos 	| - Acessar o sistema <br> - Clicar na aba "Alunos" <br> - Clicar em "Criar um novo aluno" <br> - Preencher os campos obrigatórios <br> - Clicar em "Cadastrar" |
 |Critério de Êxito | - O cadastro foi realizado com sucesso. |
 | Print do Teste | ![Home](img/RF10.jpeg))![Cadastro aluno1](img/RF13.jfif)![Cadastro aluno2](img/RF11.jfif)
 |Conclusão do teste | Teste realizado com sucesso. O cadastro foi realizado com sucesso.
