@@ -9,7 +9,7 @@ Considerando os requisitos do projeto e os casos listados no item [08. Plano de 
 | Objetivo do Teste 	| Acessar a página "Home" e utilizar suas funcionalidades |
 | Passos 	| - Acessar o sistema <br> - Clicar na aba "Alunos" <br> - Clicar em "Criar um novo aluno" <br> - Preencher os campos obrigatórios <br> - Clicar em "Cadastrar" |
 |Critério de Êxito | - O cadastro foi realizado com sucesso. |
-| Print do Teste | ![Home](img/RF10.jpeg))![Cadastro aluno1](img/RF13.jfif)![Cadastro aluno2](img/RF11.jfif)
+| Print do Teste | ![Home](img/RF10.jpeg)![Cadastro aluno1](img/RF13.jfif)![Cadastro aluno2](img/RF11.jfif)
 |Conclusão do teste | Teste realizado com sucesso. O cadastro foi realizado com sucesso.
 |  	|  	|
 | **Caso de Teste** 	| **CT-02 – Efetuar login**	|
