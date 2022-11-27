@@ -17,7 +17,7 @@ Considerando os requisitos do projeto e os casos listados no item [08. Plano de 
 | Objetivo do Teste 	| Verificar se o usuário é capaz de realizar login. |
 | Passos 	| - Acessar o sistema <br> - Clicar no botão de Login <br> - Preencher o campo de CPF <br> - Preencher o campo da senha <br> - <br> - Clicar em "Login" |
 |Critério de Êxito | - O login foi realizado com sucesso. |
-| Print do Teste | ![Login aluno](img/RF12.jfif)
+| Print do Teste | ![Login aluno](img/RF12.jfif)![Home](img/RF10.jpeg)
 |Conclusão do teste | Teste realizado com sucesso. O login foi realizado com sucesso.
 |  	|  	|
 | **Caso de Teste** 	| **CT-03 – Visualizar opções cursos**	|
