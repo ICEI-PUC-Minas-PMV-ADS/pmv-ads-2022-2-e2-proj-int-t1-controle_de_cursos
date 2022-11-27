@@ -47,7 +47,7 @@ Considerando os requisitos do projeto e os casos listados no item [08. Plano de 
 | **Caso de Teste** 	| **CT-06 – Cadastro de curso**	|
 |Requisito Associado | RF-05	- Deve disponibilizar cadastro específico para o fornecedor de curso externo inserir os dados da empresa e a documentação necessária para o cadastramento das propostas de cursos, arquivos necessários à contratação, verificação documental e validação das informações cadastrais. |
 | Objetivo do Teste 	| Verificar se o fornecedor de cursos é capaz de cadastrar uma opção de curso. |
-| Passos 	| - Acessar o sistema <br> - Efetuar o login como fornecedor de cursos <br> - Clicar na aba "Cursos" <br> - Clicar em "Criar um novo curso" <br> - Preencher os campos necessários <br> - Clicar em "Cadastrar curso" |
+| Passos 	| - Acessar o sistema <br> - Efetuar o login como fornecedor de cursos <br> - Clicar na aba "Cursos" <br> - Clicar em "Criar um novo curso" <br> - Preencher os campos necessários <br> - Clicar em "Cadastrar" |
 |Critério de Êxito | - O cadastro do curso foi efetuado com sucesso. |
 | Print do Teste | ![Novo curso](img/RF7.jpg) ![Novo curso](img/RF6.jpg)
 |Conclusão do teste | Teste realizado com sucesso. O fornecedor consegue cadastrar um novo curso.
