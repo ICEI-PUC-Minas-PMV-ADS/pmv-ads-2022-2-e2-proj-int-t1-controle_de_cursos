@@ -12,4 +12,4 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Registro de
 
 # Demais funcionalidades
 
-![demais funções](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e2-proj-int-t1-controle_de_cursos/blob/main/docs/Grava%C3%A7%C3%A3o-da-funcionalidade-Login.mp4)
+![demais funções](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e2-proj-int-t1-controle_de_cursos/blob/main/docs/Grava%C3%A7%C3%A3o-demais-fun%C3%A7%C3%B5es.mp4)
