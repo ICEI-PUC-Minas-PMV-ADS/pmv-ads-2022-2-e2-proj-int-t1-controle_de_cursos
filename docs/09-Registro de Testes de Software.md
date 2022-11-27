@@ -47,15 +47,15 @@ Considerando os requisitos do projeto e os casos listados no item [08. Plano de 
 | **Caso de Teste** 	| **CT-06 – Cadastro de curso**	|
 |Requisito Associado | RF-05	- Deve disponibilizar cadastro específico para o fornecedor de curso externo inserir os dados da empresa e a documentação necessária para o cadastramento das propostas de cursos, arquivos necessários à contratação, verificação documental e validação das informações cadastrais. |
 | Objetivo do Teste 	| Verificar se o fornecedor de cursos é capaz de cadastrar uma opção de curso. |
-| Passos 	| - Acessar o sistema <br> - Efetuar o login como fornecedor de cursos <br> - Clicar na opção de cadastrar curso <br> - Preencher os campos necessários <br> - Clicar em "Cadastrar curso" |
+| Passos 	| - Acessar o sistema <br> - Efetuar o login como fornecedor de cursos <br> - Clicar na aba "Cursos" <br> - Clicar em "Criar um novo curso" <br> - Preencher os campos necessários <br> - Clicar em "Cadastrar curso" |
 |Critério de Êxito | - O cadastro do curso foi efetuado com sucesso. |
-| Print do Teste | ![Novo curso](img/RF6.jpg) ![Novo curso](img/RF7.jpg)
+| Print do Teste | ![Novo curso](img/RF7.jpg) ![Novo curso](img/RF6.jpg)
 |Conclusão do teste | Teste realizado com sucesso. O fornecedor consegue cadastrar um novo curso.
 |  	|  	|
 | **Caso de Teste** 	| **CT-07 – Acessar histórico de solicitações de cursos**	|
 |Requisito Associado | RF-08	- Fornecer página com histórico das solicitações ja realizadas pelo aluno, sejam elas em andamento ou encerradas. |
 | Objetivo do Teste 	| Verificar se o fornecedor de cursos é capaz de cadastrar uma opção de curso. |
-| Passos 	| - Acessar o sistema <br> - Efetuar o login como aluno <br> - Clicar na opção de histórico <br> - Verificar os cursos em andamento ou encerrados <br> - Voltar a pagina inicial |
+| Passos 	| - Acessar o sistema <br> - Efetuar o login como aluno <br> - Clicar na aba "Solicitações" <br> - Verificar os cursos em andamento ou encerrados <br> - Voltar a pagina inicial |
 |Critério de Êxito | - Verificação de histórico feita com sucesso. |
 | Print do Teste | ![Solicitações de cursos](img/RF8.jpeg)
 |Conclusão do teste | Teste realizado com sucesso. Foi possível verificar o histórico de solicitações de cursos.
