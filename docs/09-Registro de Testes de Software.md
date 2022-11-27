@@ -7,7 +7,7 @@ Considerando os requisitos do projeto e os casos listados no item [08. Plano de 
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-01 - Deve possuir tela "Home" e fornecer acesso a página de cadastro de servidores efetivos e comissionados (alunos) e também login para alunos já cadastrados. |
 | Objetivo do Teste 	| Acessar a página "Home" e utilizar suas funcionalidades |
-| Passos 	| - Acessar o sistema <br> - Clicar em fazer cadastro (opção para servidores efetivos e alunos) <br> - Preencher os campos obrigatórios <br> - Clicar em "Registrar" |
+| Passos 	| - Acessar o sistema <br> - Clicar em Alunos <br> - Preencher os campos obrigatórios <br> - Clicar em "Cadastrar" |
 |Critério de Êxito | - O cadastro foi realizado com sucesso. |
 | Print do Teste | ![Home](img/RF10.jpeg))![Cadastro aluno1](img/RF13.jfif)![Cadastro aluno2](img/RF11.jfif)
 |Conclusão do teste | Teste realizado com sucesso. O cadastro foi realizado com sucesso.
@@ -15,7 +15,7 @@ Considerando os requisitos do projeto e os casos listados no item [08. Plano de 
 | **Caso de Teste** 	| **CT-02 – Efetuar login**	|
 |Requisito Associado | RF-01 - Deve possuir tela "Home" e fornecer acesso a página de cadastro de servidores efetivos e comissionados (alunos) e também login para alunos já cadastrados. |
 | Objetivo do Teste 	| Verificar se o usuário é capaz de realizar login. |
-| Passos 	| - Acessar o sistema <br> - Clicar no botão de Login <br> - Preencher o campo de CPF <br> - Preencher o campo da senha <br> - <br> - Clicar em "Login" |
+| Passos 	| - Acessar o sistema <br> - Clicar no botão de Login <br> - Preencher o campo de id <br> - Preencher o campo da senha <br> - <br> - Clicar em "Login" |
 |Critério de Êxito | - O login foi realizado com sucesso. |
 | Print do Teste | ![Login aluno](img/RF12.jfif)![Home](img/RF10.jpeg)
 |Conclusão do teste | Teste realizado com sucesso. O login foi realizado com sucesso.
@@ -31,7 +31,7 @@ Considerando os requisitos do projeto e os casos listados no item [08. Plano de 
 | **Caso de Teste** 	| **CT-04 – Ver detalhes do curso desejado**	|
 |Requisito Associado | RF-03	- A aplicação deve possuir a grade de programação de cursos contendo todos as informações específicas de cada curso. |
 | Objetivo do Teste 	| Verificar se o usuário consegue acessar o detalhamento dos cursos. |
-| Passos 	| - Fazer o login <br> - Clicar em cursos disponiveis <br> - Selecionar o curso desejado <br> - Verificar os detalhes referente ao curso <br> - Voltar a pagina de cursos |
+| Passos 	| - Fazer o login <br> - Clicar em Cursos <br> - Selecionar o curso desejado <br> - Verificar os detalhes referente ao curso <br> - Voltar a pagina de cursos |
 |Critério de Êxito | - Foi possível visualizar os detalhes do curso |
 | Print do Teste | ![Detalhes Cursos](img/RF4.jpg)
 |Conclusão do teste | Teste realizado com sucesso. Foi possível visualizar os detalhes do curso
@@ -39,7 +39,7 @@ Considerando os requisitos do projeto e os casos listados no item [08. Plano de 
 | **Caso de Teste** 	| **CT-05 – Filtrar a pesquisa de cursos de acordo com a opção desejada**	|
 |Requisito Associado | RF-04	- Deve disponibilizar ao usuário as opções de escolha conforme categoria: cursos externos (parceria com instituições de ensino e contratados por meio de licitação) e cursos internos (desenvolvidos pelos próprios servidores municipais da Administração Direta (Secretarias Municipais e/ou Órgãos) ou pelos servidores das Entidades da Administração Indireta (Autarquias e/ou Fundações). |
 | Objetivo do Teste 	| Verificar se o usuário consegue filtrar as opções de curso. |
-| Passos 	| - Fazer o login <br> - Clicar em cursos disponiveis <br> - Selecionar o filtro de acordo com a opção de curso desejada <br> - Clicar em filtrar <br> - Verificar se o sistema retornou a opção desejada. |
+| Passos 	| - Fazer o login <br> - Clicar em Cursos <br> - Selecionar o filtro de acordo com a opção de curso desejada <br> - Verificar se o sistema retornou a opção desejada. |
 |Critério de Êxito | - A pesquisa foi filtrada de acordo com a opção do usuário. |
 | Print do Teste | ![Filtro pesquisa](img/RF5.jpg)
 |Conclusão do teste | Teste realizado com sucesso. Foi possível filtrar a pesquisa de acordo com a opção do usuário.
