@@ -6,7 +6,7 @@ namespace Controle.Cursos.Models
     public class Fornecedor
     {
         public int Id { get; set; }
-        [DisplayName("Cnpj")]
+        [DisplayName("CNPJ")]
         public string Cnpj { get; set; }
         [DisplayName("Razão Social")]
         public string RazaoSocial { get; set; }
