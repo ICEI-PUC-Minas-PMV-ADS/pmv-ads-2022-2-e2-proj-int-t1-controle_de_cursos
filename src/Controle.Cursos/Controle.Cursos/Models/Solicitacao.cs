@@ -1,5 +1,6 @@
 ﻿using Controle.Cursos.Models.Enum;
 using System;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -11,8 +12,12 @@ namespace Controle.Cursos.Models
     {
         [Key]
         public int Id { get; set; }
+
+        [DisplayName("Data de Abertura")]
         public DateTime DataAbertura { get; set; }
         public EEtapaSolicitacao Etapa { get; set; }
+
+        [DisplayName("Data de Fechamento")]
         public DateTime? DataFechamento { get; set; }
         public virtual Aluno Aluno { get; set; }
         public int AlunoId { get; set; }
