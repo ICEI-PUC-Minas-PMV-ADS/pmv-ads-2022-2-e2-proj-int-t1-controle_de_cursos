@@ -47,6 +47,9 @@ O link e o usuário/senha descritos acima são apenas exemplos de como tais info
 <li><a href="docs/11-Registro de Testes de Usabilidade.md"> Registro de Testes de Usabilidade</a></li>
 <li><a href="docs/12-Apresentação do Projeto.md"> Apresentação do Projeto</a></li>
 <li><a href="docs/13-Referências.md"> Referências</a></li>
+<li><a href="docs/14-Relatório-do-teste-de-software.md"> Relatório do teste de software</a></li>
+<li><a href="docs/15-Relatório-do-teste-de-usabilidade.md"> Relatório do teste de usabilidade</a></li>
+
 </ol>
 
 # Código
