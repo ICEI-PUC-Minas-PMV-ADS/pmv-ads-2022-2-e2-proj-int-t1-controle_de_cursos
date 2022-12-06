@@ -1,7 +1,3 @@
 # Referências
 
-Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
-
-> **Links Úteis**:
-> - [Formato ABNT](https://www.normastecnicas.com/abnt/trabalhos-academicos/referencias/)
-> - [Referências Bibliográficas da ABNT](https://comunidade.rockcontent.com/referencia-bibliografica-abnt/)
+EQUIPE HUPDATA. Por que as planilhas de Excel não funcionam mais para os negócios? 2 mar. 2021. Disponível em: https://hupdata.com/planilhas-de-excel-nao-funcionam-para-negocios/. Acesso em: 15 ago. 2022.
