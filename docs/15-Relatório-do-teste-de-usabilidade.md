@@ -15,17 +15,17 @@ Conforme estabelecido no plano de teste de usabilidade, foram aplicados os teste
 
 ### **3-Resultados**
 
-#Os testes terão como objetivos obter respostas para os seguintes pontos:
+# Os testes terão como objetivos obter respostas para os seguintes pontos:
 
-#O sistema é intuitivo e de fácil utilização?
+# O sistema é intuitivo e de fácil utilização?
     
-#O sistema é responsivo?
+# O sistema é responsivo?
 
-#Os usuários alcançam seus objetivos em poucos cliques?
+# Os usuários alcançam seus objetivos em poucos cliques?
 
-#A navegabilidade é agradável e fluída?
+# A navegabilidade é agradável e fluída?
 
-#Fornecedores enviam documentos nos formatos aceitos sem erros e de forma ágil?
+# Fornecedores enviam documentos nos formatos aceitos sem erros e de forma ágil?
  
 
 ### **4-Teste de detecção de problemas**
