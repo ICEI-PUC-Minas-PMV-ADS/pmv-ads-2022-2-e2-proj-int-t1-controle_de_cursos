@@ -15,17 +15,17 @@ Conforme estabelecido no plano de teste de usabilidade, foram aplicados os teste
 
 ### **3-Resultados**
 
-# Os testes terão como objetivos obter respostas para os seguintes pontos:
+#### Os testes terão como objetivos obter respostas para os seguintes pontos:
 
-# O sistema é intuitivo e de fácil utilização?
+#### O sistema é intuitivo e de fácil utilização?
     
-# O sistema é responsivo?
+#### O sistema é responsivo?
 
-# Os usuários alcançam seus objetivos em poucos cliques?
+#### Os usuários alcançam seus objetivos em poucos cliques?
 
-# A navegabilidade é agradável e fluída?
+#### A navegabilidade é agradável e fluída?
 
-# Fornecedores enviam documentos nos formatos aceitos sem erros e de forma ágil?
+#### Fornecedores enviam documentos nos formatos aceitos sem erros e de forma ágil?
  
 
 ### **4-Teste de detecção de problemas**
@@ -36,21 +36,18 @@ O teste foi aplicado a usuários com idade entre 20 e 40 anos, com nível superi
 #### **4.2- Tarefas**
 Foi solicitado que cada usuário executasse uma das seguintes tarefas:
 
-- 1-Tentasse adotar o Pet  de nome “Petito”.  
+- 1- Cadastrar solicitação de curso.  
 Para isso, o usuário terá que passar pelo fluxos de cadastro, autenticação, busca e adoção, que correspondem aos requisitos: RF-001, RF-002, RF-003, RF-006, RF-007, RF-008.
 
-- 2-Simular ser um protetor e cadastrar o Pet de nome “Gatito” e troque o status dele para indisponível.
+- 2- Cadastrar novo aluno.
 Para isso o usuário terá que passar pelos fluxos de cadastro, autenticação e cadastro de animal, que correspondem aos requisitos:  RF-001, RF-002, RF-005, RF-009.
 
-- 3-Enviar uma mensagem de ajuda para a plataforma 
+- 3-Cadastrar novo fornecedor.
 Para isso o usuário terá que passar pelo fluxo de contato, que corresponde aos requisitos: 
 RF-001 e RF-014.
 
-- 4-Localizar as informações de termos de uso, politica de privacidade, e sobre nós na plataforma. 
+- 4-Incluir proposta de curso no sistema
 Para isso o usuário terá que localizar três páginas diferentes que se localizam no rodapé da página e correspondem aos requisitos: RF-001, RF-013, RF-015, RF-016.
-
-- 5-Cadastrar na página e editar o próprio perfil
-Para isso o usuário terá que passar pelo fluxo de cadastro, autenticação e edição de perfil, que correspondem aos requisitos: RF-001, RF-002, RF-003, RF-011.
 
 #### **4.3-Ferramentas**
 Foi definida a seguinte escala para definição dos níveis de problemas de usabilidade a serem resolvidos pela equipe:
@@ -72,7 +69,6 @@ Foi definida a seguinte escala para definição dos níveis de problemas de usab
 |  02 |  Usuário 02: Simule ser um protetor e cadastre um pet de nome “Gatito”, pode inventar as informações sobre ele. |  4'48''   | 1   | Conseguiu concluir com intervenção      | O processo de cadastro foi feito com tranquilidade, porém precisou da intervenção do aplicador, pois não havia na interface lugar que indicasse onde fazer o cadastro do protetor. O teste precisou ser interrompido e aplicado a partir de outro ponto.   |
 |  03|  Usuário 03: Envie uma mensagem com uma dúvida para  a plataforma | 44''   | 0   | Fez o envio      | Não houve comentários significativos.   | 
 |  04 | Usuário 04: Encontre as informações de “termos de uso”, “política de privacidade” e “sobre nós | 29''   | 0   | Encontrou as páginas      | Encontrou todas as páginas com tranquilidade e bem rápido   |
-|  05 |  Usuário 05: Cadastre na plataforma e faça alguma edição no seu perfil | 1'35''   | 0   | Conseguiu editar o perfil     | Fez alteração da imagem de perfil e da senha com tranquilidade, mas comentou do botão de salvar ser pequeno   |
 
 ### **4.5-Análises, recomendações**
 
