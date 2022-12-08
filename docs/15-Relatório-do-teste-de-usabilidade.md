@@ -13,44 +13,16 @@ O propósito é verificar se a interface e a performance da solução proporcion
 ### **2-Metodologia**
 Conforme estabelecido no plano de teste de usabilidade, foram aplicados os testes de “Heurística de Nielsen” e o de “Descoberta de problemas”. O teste heurístico foi aplicado ao longo do desenvolvimento, a medida em que as funcionalidades foram entregues. Já o de descoberta de problemas foi aplicado na entrega da primeira versão funcional da solução.
 
-### **3-Teste Heurístico**
+### **3-Resultados**
 
-3-Controle e liberdade para o usuário: O sistema não tem uma forma explícita de saída ou retorno da página, apenas clicando no logo na navbar que faz retornar para a landing page. A equipe optou por adicionar um botão de retorno em ambas as páginas. 
-#### **3.1-Ferramentas**
-Foi definida a seguinte escala para definição dos níveis de problemas de usabilidade a serem resolvidos pela equipe:
+Os testes terão como objetivos obter respostas para os seguintes pontos:
 
-| Escala       | Descrição                                         
-|--------|-
-|Nível 01  |Não há um problema de usabilidade         | 
-|Nível 02 | Problema estético que só será corrigido caso haja tempo disponível.
-|Nível 03 | Problema de usabilidade com baixa prioridade na correção.  
-|Nível 04 | Problema com média/alta prioridade de correção.  
-|Nível 05 | Problema com altíssima necessidade de correção, inviabilizando a entrega da funcionalidade.
-
-4- Consistência e padronização: O sistema utiliza o mesmo padrão de botões de ação na cor amarela para ações primárias, a cor verde para ações secundárias, tons de preto para títulos e a cor vermelha para mensagens de erro. Ainda, o mesmo estilo de formulários para o preenchimento de dados. 
-
-#### **3.2-Resultados**
-Os testes heurísticos aplicados ao longo do desenvolvimento da solução foram registrados. Na primeira aplicação do teste foram analisadas as telas de cadastro e login (RF-002, RF-003). O único problema crítico encontrado foi o de Controle e liberdade para o usuário. Para corrigir o grupo optou por adicionar um botão de retorno em ambas as páginas. Em seguida, após a produção de todas as telas foi reaplicado o teste das 10 Heurísticas de Nielsen em todas as páginas do projeto. A avaliação foi feita pelos participantes da equipe de back-end, que não trabalharam diretamente na construção da interface da página. Algumas das heurísticas foram avaliadas em conjunto devido a similaridade dos temas. A seguir os resultados:
-
-5-Prevenção de erros / 9-Ajude os usuários a reconhecer, diagnosticar e recuperar erros: O sistema informa através de mensagens na cor vermelha, exatamente abaixo do erro cometido, além de destacar também de vermelho o local do erro. Assim, o usuário pode visual qual e onde está o erro que cometeu antes de enviar. O envio do formulário também é interrompido caso tenha dados errados ou não preenchidos.
-| Heurísticas (Nielsen)   |  Notas dos avaliadores   |  Média  | Consenso   | Considerações   | Melhorias   |
-| ------------------- | --------------------- | -------------------- | -------------------- | -------------------- | -------------------- |
-|  01-Visibilidade do Status do Sistema |  Avaliador 1: 1 Avaliador 2: 1 Avaliador 3: 1  | 1,0   | 1   | O sistema informa a partir dos títulos, como por exemplo: “entre para continuar” e “cadastre-se em nosso site”, e através dos subtítulos na navbar, em tempo real, onde o usuário se encontra e o que deve fazer na página.   | N/A   |
-|  02-Correspondência entre o sistema e o mundo real |  Avaliador 1: 1 Avaliador 2: 1 Avaliador 3: 1 |  1,0   | 1   | O site teve compatibilidade com o mundo real, podendo usar o sistema sem interferências significativas      | N/A   |
-|  03-Correspondência entre o sistema e o mundo real |  Avaliador 1: 1 Avaliador 2: 3 Avaliador 3: 3 | 2,3   | 3   | O site teve compatibilidade com o mundo real, podendo usar o sistema sem interferências significativas      | Adicionar o botão de retorno à tela de cadastro   |
-|  04-Consistência e padronização |  Avaliador 1: 1 Avaliador 2: 1 Avaliador 3: 1 | 1,0   | 1   | Consistência e padronização: O sistema utiliza o mesmo padrão de botões de ação na cor amarela para ações primárias, a cor verde para ações secundárias, tons de preto para títulos e a cor vermelha para mensagens de erro. Ainda, o mesmo estilo de formulários para o preenchimento de dados.      | N/A   |
-|  05-Prevenção de erros / 09-Ajude os usuários a reconhecer, diagnosticar e recuperar erros |  Avaliador 1: 1 Avaliador 2: 1 Avaliador 3: 1 | 1,0   | 1   | O sistema informa através de mensagens na cor vermelha, exatamente abaixo do erro cometido, além de destacar também de vermelho o local do erro. Assim, o usuário pode visual qual e onde está o erro que cometeu antes de enviar. O envio do formulário também é interrompido caso tenha dados errados ou não preenchidos.      | N/A   |
-|  06-Reconhecimento em vez de recordação / 08-Estética e design minimalista |  Avaliador 1: 1 Avaliador 2: 1 Avaliador 3: 1 | 1,0   | 1   | O sistema informa através de mensagens na cor vermelha, exatamente abaixo do erro cometido, além de destacar também de vermelho o local do erro. Assim, o usuário pode visual qual e onde está o erro que cometeu antes de enviar. O envio do formulário também é interrompido caso tenha dados errados ou não preenchidos.      | N/A   |
-|  07- Eficiência e flexibilidade de uso  |  Avaliador 1: 1 Avaliador 2: 1 Avaliador 3: 1 | 1,0   | 1   | O usuário tem a opção do autocompletar com informações que já preencheu antes, como nome, CEP, email, etc.      | N/A   |
-|  10-Ajuda e documentação  |  Avaliador 1: 1 Avaliador 2: 1 Avaliador 3: 1 | 1,0   | 1   | No footer de todas as páginas há links para perguntas frequentes, contato com a administração da página, políticas de uso e informações sobre a plataforma.      | N/A   |
-
-Demonstrações: 
-
-6-Reconhecimento em vez de recordação/ 8-Estética e design minimalista: Ambas a telas possuem uma estética clean, mantendo apenas imagens com a temática do site, que garantem ao usuário o propósito da aplicação e apresentam somente as informações que o usuário precisa ter atenção no momento, que são os itens para o login ou cadastro.
-
-7-Eficiência e flexibilidade de uso: O usuário tem a opção do autocompletar com informações que já preencheu antes, como nome, CEP, email, etc. 
-
-10-Ajuda e documentação: No footer de todas as página há links para perguntas frequentes, contato com a administração da página, políticas de uso e informações sobre a plataforma.  
+    O sistema é intuitivo e de fácil utilização?
+    O sistema é responsivo?
+    Os usuários alcançam seus objetivos em poucos cliques?
+    A navegabilidade é agradável e fluída?
+    Fornecedores enviam documentos nos formatos aceitos sem erros e de forma ágil?
+ 
 
 ### **4-Teste de detecção de problemas**
 
