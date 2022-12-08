@@ -7,21 +7,18 @@ Em seguida, após a produção de todas as telas foi reaplicado o teste das 10 H
 1-Visibilidade do Status do Sistema: O sistema informa a partir dos títulos, como por exemplo: “entre para continuar” e “cadastre-se em nosso site”, e através dos subtítulos na navbar, em tempo real, onde o usuário se encontra e o que deve fazer na página.
 ### **1-Propósito do Teste**
 
-![TesteDeUsabilidade-Heuristica01](/docs/img/TesteRF002-003-Heuristica01.png)
 O propósito é verificar se a interface e a performance da solução proporcionam uma boa experiência para o usuário, ao identificar se há necessidade de alterações antes da entrega do projeto
 
 2-Correspondência entre o sistema e o mundo real: o sistema utiliza modelos de formulários bastante comuns em aplicações web, baseados nos estilos do design system criado pela google, “Material Design”.
 ### **2-Metodologia**
 Conforme estabelecido no plano de teste de usabilidade, foram aplicados os testes de “Heurística de Nielsen” e o de “Descoberta de problemas”. O teste heurístico foi aplicado ao longo do desenvolvimento, a medida em que as funcionalidades foram entregues. Já o de descoberta de problemas foi aplicado na entrega da primeira versão funcional da solução.
 
-![TesteDeUsabilidade-Heuristica02](/docs/img/TesteRF002-003-Heuristica02.png)
 ### **3-Teste Heurístico**
 
 3-Controle e liberdade para o usuário: O sistema não tem uma forma explícita de saída ou retorno da página, apenas clicando no logo na navbar que faz retornar para a landing page. A equipe optou por adicionar um botão de retorno em ambas as páginas. 
 #### **3.1-Ferramentas**
 Foi definida a seguinte escala para definição dos níveis de problemas de usabilidade a serem resolvidos pela equipe:
 
-![TesteDeUsabilidade-Heuristica03](/docs/img/TesteRF002-003-Heuristica03.png)
 | Escala       | Descrição                                         
 |--------|-
 |Nível 01  |Não há um problema de usabilidade         | 
@@ -32,7 +29,6 @@ Foi definida a seguinte escala para definição dos níveis de problemas de usab
 
 4- Consistência e padronização: O sistema utiliza o mesmo padrão de botões de ação na cor amarela para ações primárias, a cor verde para ações secundárias, tons de preto para títulos e a cor vermelha para mensagens de erro. Ainda, o mesmo estilo de formulários para o preenchimento de dados. 
 
-![TesteDeUsabilidade-Heuristica04](/docs/img/TesteRF002-003-Heuristica04.png)
 #### **3.2-Resultados**
 Os testes heurísticos aplicados ao longo do desenvolvimento da solução foram registrados. Na primeira aplicação do teste foram analisadas as telas de cadastro e login (RF-002, RF-003). O único problema crítico encontrado foi o de Controle e liberdade para o usuário. Para corrigir o grupo optou por adicionar um botão de retorno em ambas as páginas. Em seguida, após a produção de todas as telas foi reaplicado o teste das 10 Heurísticas de Nielsen em todas as páginas do projeto. A avaliação foi feita pelos participantes da equipe de back-end, que não trabalharam diretamente na construção da interface da página. Algumas das heurísticas foram avaliadas em conjunto devido a similaridade dos temas. A seguir os resultados:
 
@@ -48,30 +44,13 @@ Os testes heurísticos aplicados ao longo do desenvolvimento da solução foram 
 |  07- Eficiência e flexibilidade de uso  |  Avaliador 1: 1 Avaliador 2: 1 Avaliador 3: 1 | 1,0   | 1   | O usuário tem a opção do autocompletar com informações que já preencheu antes, como nome, CEP, email, etc.      | N/A   |
 |  10-Ajuda e documentação  |  Avaliador 1: 1 Avaliador 2: 1 Avaliador 3: 1 | 1,0   | 1   | No footer de todas as páginas há links para perguntas frequentes, contato com a administração da página, políticas de uso e informações sobre a plataforma.      | N/A   |
 
-![TesteDeUsabilidade-Heuristica05-09](/docs/img/TesteRF002-003-Heuristica05-09.png)
 Demonstrações: 
-![TesteDeUsabilidade-Heuristica01](/docs/img/TesteRF002-003-Heuristica01.png)
-
-![TesteDeUsabilidade-Heuristica02](/docs/img/TesteRF002-003-Heuristica02.png)
 
 6-Reconhecimento em vez de recordação/ 8-Estética e design minimalista: Ambas a telas possuem uma estética clean, mantendo apenas imagens com a temática do site, que garantem ao usuário o propósito da aplicação e apresentam somente as informações que o usuário precisa ter atenção no momento, que são os itens para o login ou cadastro.
-![TesteDeUsabilidade-Heuristica03](/docs/img/TesteRF002-003-Heuristica03.png)
-
-![TesteDeUsabilidade-Heuristica06-08](/docs/img/TesteRF002-003-Heuristica06-08.png)
-![TesteDeUsabilidade-Heuristica04](/docs/img/TesteRF002-003-Heuristica04.png)
 
 7-Eficiência e flexibilidade de uso: O usuário tem a opção do autocompletar com informações que já preencheu antes, como nome, CEP, email, etc. 
-![TesteDeUsabilidade-Heuristica05-09](/docs/img/TesteRF002-003-Heuristica05-09.png)
-
-![TesteDeUsabilidade-Heuristica07](/docs/img/TesteRF002-003-Heuristica07.png)
-![TesteDeUsabilidade-Heuristica06-08](/docs/img/TesteRF002-003-Heuristica06-08.png)
 
 10-Ajuda e documentação: No footer de todas as página há links para perguntas frequentes, contato com a administração da página, políticas de uso e informações sobre a plataforma.  
-![TesteDeUsabilidade-Heuristica07](/docs/img/TesteRF002-003-Heuristica07.png)
-
-![TesteDeUsabilidade-Heuristica10](/docs/img/TesteRF002-003-Heuristica10.png)
-
-
 
 ### **4-Teste de detecção de problemas**
 
