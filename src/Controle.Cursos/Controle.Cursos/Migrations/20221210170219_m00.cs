@@ -6,11 +6,15 @@ namespace Controle.Cursos.Migrations
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.AddColumn<string>(
+            migrationBuilder.AlterColumn<string>(
                 name: "Tipo",
                 table: "Curso",
                 type: "nvarchar(max)",
-                nullable: true);
+                nullable: false,
+                defaultValue: "",
+                oldClrType: typeof(string),
+                oldType: "nvarchar(max)",
+                oldNullable: true);
 
             migrationBuilder.AddColumn<int>(
                 name: "Sexo",
@@ -22,13 +26,17 @@ namespace Controle.Cursos.Migrations
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropColumn(
+            migrationBuilder.AlterColumn<string>(
                 name: "Tipo",
-                table: "Curso");
+                table: "Curso",
+                type: "nvarchar(max)",
+                nullable: true,
+                oldClrType: typeof(string),
+                oldType: "nvarchar(max)");
 
             migrationBuilder.DropColumn(
-                name: "Sexo",
-                table: "Alunos");
+              name: "Sexo",
+              table: "Alunos");
         }
     }
 }

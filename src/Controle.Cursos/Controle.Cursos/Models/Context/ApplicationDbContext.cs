@@ -5,7 +5,7 @@ namespace Controle.Cursos.Models.Context
 {
     public class ApplicationDbContext : DbContext
     {
-        internal object Tipo;
+
 
         public ApplicationDbContext(
             DbContextOptions<ApplicationDbContext> options) : base(options)

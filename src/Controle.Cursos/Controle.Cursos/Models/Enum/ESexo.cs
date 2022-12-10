@@ -3,6 +3,7 @@
     public enum ESexo
     {
         Feminino,
-        Masculino
+        Masculino,
+        Outro
     }
 }

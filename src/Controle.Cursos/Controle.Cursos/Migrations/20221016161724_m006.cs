@@ -47,6 +47,12 @@ namespace Controle.Cursos.Migrations
                 type: "nvarchar(max)",
                 nullable: true);
 
+            migrationBuilder.AddColumn<string>(
+               name: "Sexo",
+               table: "Alunos",
+               type: "nvarchar(max)",
+               nullable: true);
+
             migrationBuilder.AddPrimaryKey(
                 name: "PK_Alunos",
                 table: "Alunos",
@@ -93,6 +99,10 @@ namespace Controle.Cursos.Migrations
 
             migrationBuilder.DropColumn(
                 name: "Nome",
+                table: "Alunos");
+
+            migrationBuilder.DropColumn(
+                name: "Sexo",
                 table: "Alunos");
 
             migrationBuilder.RenameTable(

@@ -17,6 +17,8 @@ namespace Controle.Cursos.Models
         public DateTime DataNascimento { get; set; }
         public virtual IEnumerable<Turma> Turmas { get; set; }
         public virtual IEnumerable<Solicitacao> Solicitacoes { get; set; }
-        public ESexo Sexo { get; set; }
+
+       [DisplayName("Sexo")]
+        public string Sexo { get; set; }
     }
 }

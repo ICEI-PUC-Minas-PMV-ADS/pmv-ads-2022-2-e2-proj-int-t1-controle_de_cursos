@@ -23,7 +23,7 @@ namespace Controle.Cursos.Controllers
 
         public async Task<IActionResult> DetailsAsync(int id)
         {
-            if (id == null)
+            if (id == 0)
             {
                 return NotFound();
             }

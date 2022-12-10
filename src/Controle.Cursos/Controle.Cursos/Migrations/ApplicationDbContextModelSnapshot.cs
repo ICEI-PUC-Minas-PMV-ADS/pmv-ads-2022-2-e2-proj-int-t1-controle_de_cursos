@@ -82,6 +82,7 @@ namespace Controle.Cursos.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Tipo")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
