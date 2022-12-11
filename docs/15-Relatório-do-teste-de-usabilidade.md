@@ -1,74 +1,50 @@
 # Registro de Testes de Usabilidade
 
-O primeiro teste de usabilidade aplicado foi o teste das 10 Heurísticas de Nielsen. Foram analisadas as telas de cadastro e login (RF-002, RF-003). O único problema encontrado foi o de Controle e liberdade para o usuário. Para corrigir o grupo optou por adicionar um botão de retorno em ambas as páginas.
-Em seguida, após a produção de todas as telas foi reaplicado o teste das 10 Heurísticas de Nielsen em todas as páginas do projeto. A seguir os resultados:
+O primeiro teste de usabilidade aplicado foi o teste das 10 Heurísticas de Nielsen. Foram analisadas as telas de login, cadastro de cursos e cadatro de novos alunos, tanto na visão de "aluno" como de administrador do sistema. O principal problema encontrado foi o formato da data de nascimento que solicita a hora para poder salvar, ainda estamos tentando corrigir porém tal situação em nada atrapalha a utilização do sistema. A seguir os resultados:
 ## Relatório de Teste de Usabilidade
 
-1-Visibilidade do Status do Sistema: O sistema informa a partir dos títulos, como por exemplo: “entre para continuar” e “cadastre-se em nosso site”, e através dos subtítulos na navbar, em tempo real, onde o usuário se encontra e o que deve fazer na página.
+1-Visibilidade do Status do Sistema: O sistema informa a partir dos títulos, como por exemplo: “login” e “sair”, e através dos subtítulos na navbar, em tempo real, onde o usuário se encontra e o que deve fazer na página.
 ### **1-Propósito do Teste**
 
 O propósito é verificar se a interface e a performance da solução proporcionam uma boa experiência para o usuário, ao identificar se há necessidade de alterações antes da entrega do projeto
 
 2-Correspondência entre o sistema e o mundo real: o sistema utiliza modelos de formulários bastante comuns em aplicações web, baseados nos estilos do design system criado pela google, “Material Design”.
-### **2-Metodologia**
-Conforme estabelecido no plano de teste de usabilidade, foram aplicados os testes de “Heurística de Nielsen” e o de “Descoberta de problemas”. O teste heurístico foi aplicado ao longo do desenvolvimento, a medida em que as funcionalidades foram entregues. Já o de descoberta de problemas foi aplicado na entrega da primeira versão funcional da solução.
 
 ### **3-Resultados**
 
 #### Os testes terão como objetivos obter respostas para os seguintes pontos:
 
 #### O sistema é intuitivo e de fácil utilização?
+De acordo com os usuários o sistema é de fácil utilização
     
 #### O sistema é responsivo?
+De acordo com os usuários o sistema é responsivo
 
 #### Os usuários alcançam seus objetivos em poucos cliques?
+Os usuários alcançam seus objetivos, mas observamos que o número de clique poderia ser reduzido o que melhoraria a experiência do usuário
 
 #### A navegabilidade é agradável e fluída?
+Sim, os usuários acharam a navegabilidade agradável e fluida
 
 #### Fornecedores enviam documentos nos formatos aceitos sem erros e de forma ágil?
- 
+ Sim, em nossos testes os usuários na visão "fornecedores" conseguem cadastrar novos cursos de forma ágil e sem erros
 
 ### **4-Teste de detecção de problemas**
 
-#### **4-1 Perfil do Usuário**
-O teste foi aplicado a usuários com idade entre 20 e 40 anos, com nível superior completo, mais de um ano de conhecimentos básicos de informática (uso do mouse e teclado), de utilização de aplicativos básicos (como por exemplo, o Office) e de como acessar a web e utilizar navegadores, além de possuir alguma noção sobre criação de animais domésticos. 
-
-#### **4.2- Tarefas**
+#### **4.1- Tarefas**
 Foi solicitado que cada usuário executasse uma das seguintes tarefas:
 
 - 1- Cadastrar solicitação de curso.  
-Para isso, o usuário terá que passar pelo fluxos de cadastro, autenticação, busca e adoção, que correspondem aos requisitos: RF-001, RF-002, RF-003, RF-006, RF-007, RF-008.
+Para isso, o usuário terá que logar no sistema na visão "aluno" e solicitar inscrição em um dos cursos disponíveis.
 
 - 2- Cadastrar novo aluno.
-Para isso o usuário terá que passar pelos fluxos de cadastro, autenticação e cadastro de animal, que correspondem aos requisitos:  RF-001, RF-002, RF-005, RF-009.
+Para isso, o usuário terá que logar no sistema na visão "Administrador" e cadastrar novo aluno no menu "Alunos".
 
 - 3-Cadastrar novo fornecedor.
-Para isso o usuário terá que passar pelo fluxo de contato, que corresponde aos requisitos: 
-RF-001 e RF-014.
+Para isso, o usuário terá que logar no sistema na visão "Administrador" e cadastrar novo fornecedor no menu "Fornecedores".
 
 - 4-Incluir proposta de curso no sistema
-Para isso o usuário terá que localizar três páginas diferentes que se localizam no rodapé da página e correspondem aos requisitos: RF-001, RF-013, RF-015, RF-016.
-
-#### **4.3-Ferramentas**
-Foi definida a seguinte escala para definição dos níveis de problemas de usabilidade a serem resolvidos pela equipe:
-
-| Escala       | Descrição                                         
-|--------|-
-|Nível 01  |Não há um problema de usabilidade         | 
-|Nível 02 | Problema estético que só será corrigido caso haja tempo disponível.
-|Nível 03 | Problema de usabilidade com baixa prioridade na correção.  
-|Nível 04 | Problema com média/alta prioridade de correção.  
-|Nível 05 | Problema com altíssima necessidade de correção, inviabilizando a entrega da funcionalidade.
-
-
-### **4.4-Resultados**
-
-| Número da Tarefa   |  Orientações   |  Tempo de execução  | Erros   | Finalizou a tarefa?   | Observações   |
-| -------------- | --------------------- | -------------------- | -------------------- | -------------------- | -------------------- |
-| 01 |  Usuário 01: Tente adotar o pet de Nome “Torresmo”  | 3'54''   | 2   |Conseguiu candidatar para adoção.   | A mensagem de erro nos campos de validação não desaparece quando o requisito é cumprido. /Dificuldade de perceber se o login foi feito.   |
-|  02 |  Usuário 02: Simule ser um protetor e cadastre um pet de nome “Gatito”, pode inventar as informações sobre ele. |  4'48''   | 1   | Conseguiu concluir com intervenção      | O processo de cadastro foi feito com tranquilidade, porém precisou da intervenção do aplicador, pois não havia na interface lugar que indicasse onde fazer o cadastro do protetor. O teste precisou ser interrompido e aplicado a partir de outro ponto.   |
-|  03|  Usuário 03: Envie uma mensagem com uma dúvida para  a plataforma | 44''   | 0   | Fez o envio      | Não houve comentários significativos.   | 
-|  04 | Usuário 04: Encontre as informações de “termos de uso”, “política de privacidade” e “sobre nós | 29''   | 0   | Encontrou as páginas      | Encontrou todas as páginas com tranquilidade e bem rápido   |
+Para isso, o usuário terá que logar no sistema na visão "Fornecedores" e cadastrar novo Curso no menu "Cursos".
 
 ### **4.5-Análises, recomendações**
 
