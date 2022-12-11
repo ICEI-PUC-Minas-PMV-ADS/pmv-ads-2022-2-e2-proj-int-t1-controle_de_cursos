@@ -46,7 +46,7 @@ Para isso, o usuário terá que logar no sistema na visão "Administrador" e cad
 - 4-Incluir proposta de curso no sistema
 Para isso, o usuário terá que logar no sistema na visão "Fornecedores" e cadastrar novo Curso no menu "Cursos".
 
-### **4.2-Análises, recomendações**
+#### **4.2-Análises, recomendações**
 
 A partir dos resultados dos testes feito com os usuários foram identificados 3 problemas principais de usabilidade. Sendo eles: 
 
