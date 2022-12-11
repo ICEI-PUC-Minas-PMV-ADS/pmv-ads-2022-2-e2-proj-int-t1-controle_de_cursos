@@ -1,6 +1,7 @@
 ﻿using Controle.Cursos.Models;
 using Controle.Cursos.Models.Context;
 using Controle.Cursos.Models.Enum;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -10,6 +11,7 @@ using System.Threading.Tasks;
 
 namespace Controle.Cursos.Controllers
 {
+    [Authorize]
     public class TurmaController : Controller
     {
         private readonly ApplicationDbContext _context;

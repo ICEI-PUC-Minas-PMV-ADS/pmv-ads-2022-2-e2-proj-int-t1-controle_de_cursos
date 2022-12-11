@@ -1,5 +1,6 @@
 ﻿using Controle.Cursos.Models;
 using Controle.Cursos.Models.Context;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -9,6 +10,7 @@ using System.Threading.Tasks;
 
 namespace Controle.Cursos.Controllers
 {
+    [Authorize]
     public class CursoController : Controller
     {
         private readonly ApplicationDbContext _context;

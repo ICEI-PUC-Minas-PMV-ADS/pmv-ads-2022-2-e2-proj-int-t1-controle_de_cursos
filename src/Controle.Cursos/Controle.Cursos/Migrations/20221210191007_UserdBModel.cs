@@ -12,9 +12,9 @@ namespace Controle.Cursos.Migrations
               {
                   Id = table.Column<int>(type: "int", nullable: false)
                       .Annotation("SqlServer:Identity", "1, 1"),
-                  Nome = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                  Senha = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                  Perfil = table.Column<int>(type: "int", nullable: false),
+                  Nome = table.Column<string>(type: "nvarchar(max)", nullable: false, defaultValue:"admin"),
+                  Senha = table.Column<string>(type: "nvarchar(max)", nullable: false, defaultValue: "12345"),
+                  Perfil = table.Column<int>(type: "int", nullable: false, defaultValue: 0),
               },
               constraints: table =>
               {

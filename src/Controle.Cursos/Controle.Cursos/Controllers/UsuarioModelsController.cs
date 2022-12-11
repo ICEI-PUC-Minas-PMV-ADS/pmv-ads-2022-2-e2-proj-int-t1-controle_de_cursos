@@ -7,23 +7,33 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Controle.Cursos.Models;
 using Controle.Cursos.Models.Context;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNet.Identity.EntityFramework;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Controle.Cursos.Controllers
 {
+    [Authorize(Roles = "Admin")]
+
     public class UsuarioModelsController : Controller
     {
+
         private readonly ApplicationDbContext _context;
+
 
         public UsuarioModelsController(ApplicationDbContext context)
         {
             _context = context;
         }
 
+        [AllowAnonymous]
         public IActionResult Login()
         {
             return View();
         }
         [HttpPost]
+        [AllowAnonymous]
         public async Task<IActionResult> Login([Bind("Nome,Senha")] UsuarioModel usuarioModel)
         {
             var usuario = await _context.UsuarioModel
@@ -39,10 +49,43 @@ namespace Controle.Cursos.Controllers
 
             if (senhaOk)
             {
-                ViewBag.Message = "Usuário Ok!";
-                return View();
+                var credencial = new List<Claim>
+                {
+                    new Claim(ClaimTypes.Name, usuario.Nome),
+                    new Claim(ClaimTypes.NameIdentifier, usuario.Nome),
+                    new Claim(ClaimTypes.Role, usuario.Perfil.ToString())
+                };
+
+
+                var useridentity = new ClaimsIdentity(credencial, "login");
+
+                ClaimsPrincipal principal = new ClaimsPrincipal(useridentity);
+
+                var props = new AuthenticationProperties
+                {
+                    AllowRefresh = true,
+                    ExpiresUtc = DateTime.Now.ToLocalTime().AddDays(7),
+                    IsPersistent = true
+                };
+
+                await HttpContext.SignInAsync(principal, props);
+
+                return Redirect("/");
+
             }
             ViewBag.Message = "Usuário e/ou Senha inválidos!";
+            return View();
+        }
+
+        [AllowAnonymous]
+        public async Task<IActionResult> Logout()
+        {
+            await HttpContext.SignOutAsync();
+            return RedirectToAction("Login", "UsuarioModels");
+        }
+        [AllowAnonymous]
+        public IActionResult AccessDenied()
+        {
             return View();
         }
         // GET: UsuarioModels

@@ -20,6 +20,21 @@ namespace Controle.Cursos.Migrations
                 {
                     table.PrimaryKey("PK_Curso", x => x.Id);
                 });
+
+                        migrationBuilder.CreateTable(
+              name: "UsuarioModel",
+              columns: table => new
+              {
+                  Id = table.Column<int>(type: "int", nullable: false)
+                      .Annotation("SqlServer:Identity", "1, 1"),
+                  Nome = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                  Senha = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                  Perfil = table.Column<int>(type: "int", nullable: false),
+              },
+              constraints: table =>
+              {
+                  table.PrimaryKey("PK_UsuarioModel", x => x.Id);
+              });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -27,7 +42,9 @@ namespace Controle.Cursos.Migrations
             migrationBuilder.DropTable(
                 name: "Curso");
 
-        }
+            migrationBuilder.DropTable(
+                name: "UsuarioModel");
 
+        }
     }
 }
