@@ -6,10 +6,3 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Registro de
 
 ## (É necessário clicar nos links abaixo e baixar os vídeos para visualização)
 
-# Login 
-
-![login](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e2-proj-int-t1-controle_de_cursos/blob/main/docs/Grava%C3%A7%C3%A3o-do-Login.mp4)
-
-# Demais funcionalidades
-
-![demais funções](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e2-proj-int-t1-controle_de_cursos/blob/main/docs/Grava%C3%A7%C3%A3o-demais-fun%C3%A7%C3%B5es.mp4)
