@@ -46,33 +46,13 @@ Para isso, o usuário terá que logar no sistema na visão "Administrador" e cad
 - 4-Incluir proposta de curso no sistema
 Para isso, o usuário terá que logar no sistema na visão "Fornecedores" e cadastrar novo Curso no menu "Cursos".
 
-### **4.5-Análises, recomendações**
+### **4.2-Análises, recomendações**
 
-A partir dos resultados dos testes feito com os usuários foram identificados 4 problemas de usabilidade. Sendo eles: 
+A partir dos resultados dos testes feito com os usuários foram identificados 3 problemas principais de usabilidade. Sendo eles: 
 
-`Tarefa 01:`
-
-**Erro 1:** Dificuldade de perceber que o login foi efetuado com sucesso.
-
-Nível: 4
-
-Requisitos: RF-001 e RF-003.
-
-Solução: A equipe optou por redirecionar o usuário para a tela de busca de animais quando ele consegue fazer o login ao invés de retornar para a landing page.
-
-**Erro 2:** Mensagem de erro na validação não desaparece ao cumprir o requisito
-
-Nível: 2
-
-Requisitos: RF-002.
-
-Solução: A equipe acredita que a melhor solução é colocar a validação instantânea. Caso haja tempo já será feita a atleração. 
-
-`Tarefa 02:`
-
-### **4.5-Considerações**
-
-Os erros de nível 4 e 5 foram corrigidos pela equipe e os de nível 2 estão sujeitos à disponibilidade de tempo. Nenhum erro foi encontrado nos testes das tarefas 03 e 04. 
+- 1- Layout do sistema "padrão", sem cores ou efeitos para facilitar a navegação
+- 2- Para cadastrar um novo aluno precisa informar a data de nascimento junto com a hora do nascimento, o que é desnecessário.
+- 3- O aluno logado precisa selecionar ele mesmo quando for escolher um novo curso, novamente desnecessário
 
 ###  **5-Conclusão**
 
