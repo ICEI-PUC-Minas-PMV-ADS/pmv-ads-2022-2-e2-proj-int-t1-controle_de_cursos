@@ -56,6 +56,5 @@ A partir dos resultados dos testes feito com os usuários foram identificados 3 
 
 ###  **5-Conclusão**
 
-Os teste de usabilidade aplicados mostraram-se úteis na identificação
-dos problemas de usabilidade na plataforma. Foi possível identificar vários problemas, com diferentes graus de importância e impacto na experiência do usuário. Concluiu-se que o sistema deverá sofrer alterações como: adição de links na landing page, mudanças nos redirecionamentos, adição de botões e mudança no tamanho dos mesmos, entre outros.
-Asism, a equipe conclui que a usabilidade da aplicação web é efeciente e consegue proprorcionar uma boa experiência para o usuário.
+Os teste de usabilidade aplicados mostraram-se úteis na identificação dos problemas de usabilidade na plataforma. Foi possível identificar vários problemas, com diferentes graus de importância e impacto na experiência do usuário. Concluiu-se que o sistema deverá sofrer alterações como: adição de links na landing page, adição de botões e mudança no tamanho dos mesmos, entre outros.
+Asism, a equipe conclui que a usabilidade da aplicação web é eficiente e consegue proporcionar uma boa experiência para o usuário.
