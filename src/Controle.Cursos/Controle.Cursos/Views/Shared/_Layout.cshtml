@@ -25,22 +25,23 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
 
-                        @if (User.Identity.IsAuthenticated) 
-                        { 
+                        @if (User.Identity.IsAuthenticated)
+                        {
 
                             @if (User.IsInRole("Admin"))
                             {
                                 <li>
                                     <a class="nav-link text-dark" asp-area="" asp-controller="UsuarioModels" asp-action="Index">Usuario</a>
                                 </li>
+                                <li>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Fornecedor" asp-action="Index">Fornecedores</a>
+                                </li>
                             }
 
                             <li>
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Curso" asp-action="Index">Cursos</a>
                             </li>
-                            <li>
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Fornecedor" asp-action="Index">Fornecedores</a>
-                            </li>
+
                             <li>
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Aluno" asp-action="Index">Alunos</a>
                             </li>
@@ -54,7 +55,7 @@
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                             </li>
                         }
-                        </ul>
+                    </ul>
                     <ul class="navbar-nav">
 
                         @if (User.Identity.IsAuthenticated)
