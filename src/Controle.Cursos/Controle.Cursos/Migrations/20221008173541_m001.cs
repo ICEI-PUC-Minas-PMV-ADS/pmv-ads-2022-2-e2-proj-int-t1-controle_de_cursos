@@ -26,6 +26,8 @@ namespace Controle.Cursos.Migrations
         {
             migrationBuilder.DropTable(
                 name: "Curso");
+
         }
+
     }
 }

@@ -20,6 +20,6 @@ namespace Controle.Cursos.Models.Context
         public DbSet<Solicitacao> Solicitacoes { get; set; }
         public DbSet<Turma> Turmas { get; set; }
 
-
+        public DbSet<UsuarioModel> UsuarioModel{ get; set; }
     }
 }
