@@ -6,9 +6,13 @@
 
 <h1>Turmas</h1>
 
+@if (User.IsInRole("Admin")) 
+{
+                            
 <p>
     <a asp-action="Create">Criar uma nova Turma</a>
 </p>
+}
 <table class="table" id="tabelaTurmas">
     <thead>
         <tr>
