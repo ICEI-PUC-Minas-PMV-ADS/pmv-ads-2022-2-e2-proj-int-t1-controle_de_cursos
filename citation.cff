@@ -1,0 +1,26 @@
+message: Please cite this software using these metadata.
+title: Controle de Cursos
+authors:
+  - family-names: Guimarães Santos
+    given-names:  Pedro
+  - family-names: Alvarenga Rodrigues
+    given-names: Rafael
+  - family-names: Penido De Souza
+    given-names: Rafael
+  - family-names: Liberato Ferreira
+    given-names: Renato
+  - family-names: Teixeira Ribeiro
+    given-names: Robert
+  - family-names: Martins de Santanna
+    given-names: Vitor
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Ribeiro da Mota
+    given-names: Rosilane
+keywords:
+  - Gestão
+  - Cursos
+  - Alunos
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e2-proj-int-t1-controle_de_cursos
+version: 1.0.0
+date-released: 2022-11-27
